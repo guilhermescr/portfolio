@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+$heading-font: "Lato", sans-serif;
+$text-font: "Montserrat", sans-serif;
+
+// color palette
+$darker-green: #093824;
+$headingGradient-primary-color: #44cf6c;
+$headingGradient-secondary-color: #1b8038;
+
+$light_background: #fdfdfd;
+$light_lighter-text: #aaa;
+
+$dark_background: #1a1917;
+$dark_light-green: #20fc8f;
+$dark_lighter-text: #ddd;
+
+@mixin lightMode {
+  --bgColor: #{$light_background};
+  --textColor: #{$light_lighter-text};
+  --greenText: #{$headingGradient-secondary-color};
+}
+
+@mixin darkMode {
+  --bgColor: #{$dark_background};
+  --textColor: #{$dark_lighter-text};
+  --greenText: #{$headingGradient-primary-color};
+}

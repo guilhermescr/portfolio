@@ -1,0 +1,54 @@
+@use "./assets/scss/partials/base";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--bgColor);
+  transition: background 0.2s linear;
+}
+
+body.light {
+  @include base.lightMode;
+}
+
+body.dark {
+  @include base.darkMode;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: base.$heading-font;
+}
+
+*:not(h1, h2, h3, h4, h5, h6) {
+  font-family: base.$text-font;
+}
+
+app-root {
+  display: inline-block;
+  min-height: 100vh;
+  width: 100%;
+}
