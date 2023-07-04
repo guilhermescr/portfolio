@@ -4,6 +4,7 @@
 :host {
   header {
     @include mixins.flex-center;
+    height: 77px;
     justify-content: space-between;
     padding-block: 1.4rem;
     position: relative;
@@ -54,11 +55,14 @@
           &.active::after {
             animation: underlineAnimation 0.15s forwards;
             background-color: var(--greenText);
+            bottom: -10%;
             content: "";
             display: block;
             height: 2px;
+            left: 50%;
             margin-inline: auto;
-            transform: translateY(5%);
+            position: absolute;
+            transform: translateX(-50%);
           }
         }
       }

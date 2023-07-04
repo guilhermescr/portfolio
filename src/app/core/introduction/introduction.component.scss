@@ -1,0 +1,107 @@
+@use "../../../assets/scss/partials/base";
+@use "../../../assets/scss/partials/mixins";
+
+:host {
+  .introduction {
+    @include mixins.flex-center;
+    gap: 5rem;
+    min-height: calc(100vh - 77px);
+
+    .introduction__info {
+      h1 {
+        color: var(--bgReverse);
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+
+        > span {
+          display: block;
+        }
+
+        .highlighted-with-gradient {
+          background: -webkit-linear-gradient(
+            90deg,
+            var(--highlightWithGradient)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+
+      .social-media-buttons {
+        @include mixins.flex-center;
+        gap: 1rem;
+        justify-content: flex-start;
+
+        button {
+          background-color: var(--greenText);
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 1.3rem;
+          font-weight: 500;
+
+          &:hover {
+            filter: brightness(0.8);
+          }
+
+          &:active {
+            filter: brightness(1.1);
+          }
+
+          a {
+            color: #fff;
+            @include mixins.flex-center;
+            gap: 0.5rem;
+            justify-content: space-between;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+
+            .social-media-buttons__linkedin {
+              width: 1.2rem;
+
+              * {
+                fill: #fff;
+              }
+            }
+
+            .social-media-buttons__github {
+              width: 1.5rem;
+
+              * {
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .introduction__guilherme-picture {
+      background-color: #fdfdfd;
+      border-radius: 0 20px 0 20px;
+      box-shadow: 0 0 2px #0000008c;
+      max-width: 15rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  :host {
+    .introduction {
+      flex-direction: column-reverse;
+      gap: 2rem;
+
+      .introduction__info {
+        h1 {
+          font-size: 1.7rem;
+          width: max-content;
+        }
+
+        .social-media-buttons {
+          @include mixins.flex-center(column);
+        }
+      }
+    }
+  }
+}

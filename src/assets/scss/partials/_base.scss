@@ -20,6 +20,8 @@ $dark_lighter-text: #ddd;
   --bgReverse: #{$dark_background};
   --textColor: #{$light_lighter-text};
   --greenText: #{$headingGradient-secondary-color};
+  --highlightWithGradient: #{$headingGradient-primary-color,
+    $headingGradient-secondary-color};
 }
 
 @mixin darkMode {
@@ -27,4 +29,6 @@ $dark_lighter-text: #ddd;
   --bgReverse: #{$light_background};
   --textColor: #{$dark_lighter-text};
   --greenText: #{$headingGradient-primary-color};
+  --highlightWithGradient: #{$headingGradient-primary-color 20%,
+    $dark_light-green};
 }

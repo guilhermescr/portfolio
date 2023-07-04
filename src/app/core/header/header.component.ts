@@ -1,4 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
+import { ThemesService } from 'src/app/shared/services/themes.service';
 
 @Component({
   selector: 'app-header',
@@ -6,14 +7,21 @@ import { Component, Renderer2 } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  currentMode: string = 'dark';
+  currentMode: string = this.themesService.getCurrentModeValue();
   currentTab: string = 'home';
   isNavbarOpen: boolean = false;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(
+    private renderer: Renderer2,
+    private themesService: ThemesService
+  ) {
+    this.themesService.currentMode.subscribe((currentModeValue) => {
+      this.currentMode = currentModeValue;
+    });
+  }
 
   toggleCurrentMode(): void {
-    this.currentMode = this.currentMode === 'dark' ? 'light' : 'dark';
+    this.themesService.toggleCurrentMode();
     this.renderer.setAttribute(document.body, 'class', this.currentMode);
   }
 
