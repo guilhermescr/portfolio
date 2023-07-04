@@ -1,35 +1,61 @@
 <header>
   <img
     class="logo"
-    src="../../../assets/img/devguiga-logo.webp"
+    src="{{
+      currentMode === 'dark'
+        ? '../../../assets/img/dark-logo-devguiga.webp'
+        : '../../../assets/img/light-logo-devguiga.webp'
+    }}"
     alt="Dev Guiga's Logo"
   />
 
-  <nav>
-    <button class="close-navbar-button">
-      <span class="close-bar"></span>
-      <span class="close-bar"></span>
+  <nav [class.open]="isNavbarOpen">
+    <button
+      (click)="closeNavbarMenu()"
+      class="close-navbar-button"
+      matTooltip="Close Navbar"
+      aria-label="Button to close the navbar menu"
+      *ngIf="isNavbarOpen"
+    >
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Close Menu Icon"
+        fontIcon="close"
+      ></mat-icon>
     </button>
 
+    <img
+      *ngIf="isNavbarOpen"
+      src="../../../assets/img/neutral-logo-devguiga.webp"
+      alt="Dev Guiga Logo"
+    />
+
     <ul>
-      <li [class.active]="currentTab === 'home'" (click)="currentTab = 'home'">
+      <li
+        [class.active]="currentTab === 'home'"
+        (click)="currentTab = 'home'"
+        (click)="closeNavbarMenu()"
+      >
         Home
       </li>
       <li
         [class.active]="currentTab === 'about-me'"
         (click)="currentTab = 'about-me'"
+        (click)="closeNavbarMenu()"
       >
         About Me
       </li>
       <li
         [class.active]="currentTab === 'projects'"
         (click)="currentTab = 'projects'"
+        (click)="closeNavbarMenu()"
       >
         Projects
       </li>
       <li
         [class.active]="currentTab === 'contact'"
         (click)="currentTab = 'contact'"
+        (click)="closeNavbarMenu()"
       >
         Contact
       </li>
@@ -159,5 +185,18 @@
         fill=""
       />
     </svg>
+  </button>
+
+  <button
+    (click)="openNavbarMenu()"
+    class="open-navbar-button"
+    matTooltip="Open Navbar"
+    aria-label="Button to open the navbar menu"
+  >
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Responsive Burger Menu Icon"
+      fontIcon="menu"
+    ></mat-icon>
   </button>
 </header>

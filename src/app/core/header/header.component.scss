@@ -17,6 +17,10 @@
         display: none;
       }
 
+      img {
+        display: none;
+      }
+
       ul {
         @include mixins.flex-center;
         gap: 1rem;
@@ -107,28 +111,107 @@
         }
       }
     }
+
+    .open-navbar-button {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 768px) {
   :host {
     header {
+      @keyframes openNavbarAnimation {
+        0% {
+          top: -100%;
+        }
+
+        100% {
+          top: 0;
+        }
+      }
+
       nav {
-        background-color: base.$darker-green;
-        // @include mixins.flex-center;
         display: none;
-        left: 0;
-        min-height: 100vh;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 2;
+
+        &.open {
+          animation: openNavbarAnimation 0.1s linear;
+          background-color: base.$darker-green;
+          @include mixins.flex-center(column);
+          justify-content: flex-start;
+          left: 0;
+          min-height: 100vh;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 2;
+
+          img {
+            display: block;
+          }
+        }
+
+        .close-navbar-button {
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          @include mixins.flex-center;
+          position: absolute;
+          right: 1.5rem;
+          top: 1.5rem;
+          transform: scale(1.5);
+        }
+
+        img {
+          background-color: #000;
+          border-radius: 50%;
+          margin-top: 5rem;
+          max-width: 10rem;
+        }
 
         ul {
           flex-direction: column;
+          margin-top: 2rem;
 
           li {
             font-size: 1.8rem;
+          }
+        }
+      }
+
+      .toggle-current-mode-button {
+        margin-left: auto;
+        margin-right: 1.5rem;
+      }
+
+      .open-navbar-button {
+        background-color: var(--bgReverse);
+        border: none;
+        border-radius: 3px;
+        color: var(--bgColor);
+        cursor: pointer;
+        display: flex;
+        padding-inline: 0.1rem;
+        transform: scale(1.4);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  :host {
+    header {
+      nav {
+        &.open {
+          justify-content: center;
+
+          img {
+            display: none;
+          }
+
+          ul {
+            margin: 0;
           }
         }
       }

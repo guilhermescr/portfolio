@@ -17,12 +17,14 @@ $dark_lighter-text: #ddd;
 
 @mixin lightMode {
   --bgColor: #{$light_background};
+  --bgReverse: #{$dark_background};
   --textColor: #{$light_lighter-text};
   --greenText: #{$headingGradient-secondary-color};
 }
 
 @mixin darkMode {
   --bgColor: #{$dark_background};
+  --bgReverse: #{$light_background};
   --textColor: #{$dark_lighter-text};
   --greenText: #{$headingGradient-primary-color};
 }
