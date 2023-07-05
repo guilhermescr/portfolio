@@ -1,0 +1,45 @@
+@use "../../../../assets/scss/partials/mixins";
+
+:host {
+  background-color: #333;
+  border-radius: 7px;
+  box-shadow: 0 0 15px #474747aa inset;
+  cursor: pointer;
+  @include mixins.flex-center;
+  height: 150px;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+  transition: all 180ms linear;
+  width: max-content;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  img {
+    filter: brightness(0.8) grayscale(100%);
+    max-width: 5.3rem;
+
+    &[alt="Angular Logo"] {
+      transform: scale(1.1);
+    }
+
+    &[alt="Figma Logo"] {
+      transform: scale(0.7);
+    }
+
+    &[alt="Api-rest Logo"] {
+      transform: scale(1.2);
+    }
+
+    &:hover {
+      filter: brightness(1) grayscale(0%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  :host {
+    padding-inline: 2.5rem;
+  }
+}

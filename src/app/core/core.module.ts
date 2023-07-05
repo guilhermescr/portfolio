@@ -5,6 +5,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SkillComponent } from './skills/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     FooterComponent,
     IntroductionComponent,
     AboutMeComponent,
+    SkillsComponent,
+    SkillComponent,
   ],
   imports: [CommonModule, SharedModule],
   exports: [
@@ -19,6 +23,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     FooterComponent,
     IntroductionComponent,
     AboutMeComponent,
+    SkillsComponent,
   ],
 })
 export class CoreModule {}

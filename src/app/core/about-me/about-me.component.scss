@@ -4,7 +4,7 @@
   .about-me {
     @include mixins.flex-center;
     gap: 5rem;
-    min-height: 100vh;
+    min-height: 90vh;
 
     img {
       max-width: 27rem;
@@ -41,6 +41,7 @@
 
       > p {
         color: var(--textColor);
+        line-height: 1.5rem;
         max-width: 35rem;
         text-align: justify;
       }
