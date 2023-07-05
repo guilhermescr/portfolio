@@ -1,0 +1,25 @@
+@use "../../../../assets/scss/partials/mixins";
+
+:host {
+  bottom: 1rem;
+  position: fixed;
+  right: 1rem;
+
+  button {
+    background-color: var(--greenText);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0.3rem #aaa;
+    color: var(--bgColor);
+    cursor: pointer;
+    @include mixins.flex-center;
+    height: 3.2rem;
+    transition: all 0.15s linear;
+    width: 3.2rem;
+
+    &:hover {
+      filter: brightness(0.85);
+      transform: scale(1.04);
+    }
+  }
+}
