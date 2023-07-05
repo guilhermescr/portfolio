@@ -57,7 +57,30 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--greenText);
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    align-self: center;
+    text-align: center;
+  }
 }

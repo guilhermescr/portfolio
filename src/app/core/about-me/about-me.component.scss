@@ -1,0 +1,123 @@
+@use "../../../assets/scss/partials/mixins";
+
+:host {
+  .about-me {
+    @include mixins.flex-center;
+    gap: 5rem;
+    min-height: 100vh;
+
+    img {
+      max-width: 27rem;
+    }
+
+    .about-me__info {
+      @include mixins.flex-center(column);
+      align-items: flex-start;
+      gap: 1rem;
+
+      h2 {
+        color: var(--greenText);
+        font-size: 2rem;
+      }
+
+      .location {
+        color: #fff;
+        @include mixins.flex-center;
+        gap: 0.6rem;
+
+        #location-icon {
+          background-color: var(--greenText);
+          border-radius: 5px;
+          @include mixins.flex-center;
+          font-size: 1.4rem;
+          padding: 1rem;
+        }
+
+        p {
+          color: var(--bgReverse);
+          font-weight: 600;
+        }
+      }
+
+      > p {
+        color: var(--textColor);
+        max-width: 35rem;
+        text-align: justify;
+      }
+
+      .more-contact-options {
+        @include mixins.flex-center;
+        gap: 1rem;
+        justify-content: flex-start;
+
+        button {
+          background-color: var(--greenText);
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 1.3rem;
+          font-weight: 500;
+
+          &:hover {
+            filter: brightness(0.8);
+          }
+
+          &:active {
+            filter: brightness(1.1);
+          }
+
+          a {
+            color: #fff;
+            @include mixins.flex-center;
+            gap: 0.5rem;
+            justify-content: space-between;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+
+            .more-contact-options__icon {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  :host {
+    .about-me {
+      @include mixins.flex-center(column);
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  :host {
+    .about-me {
+      img {
+        max-width: 20rem;
+      }
+
+      .about-me__info {
+        margin-inline: auto;
+
+        .more-contact-options {
+          button {
+            font-size: 0.9rem;
+
+            a {
+              @include mixins.flex-center;
+              padding-inline: 0.8rem;
+
+              .more-contact-options__icon {
+                @include mixins.flex-center;
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
