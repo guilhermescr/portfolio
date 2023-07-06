@@ -24,6 +24,10 @@
       transform: scale(1.1);
     }
 
+    &[alt="Styled-components Logo"] {
+      transform: scale(1.3);
+    }
+
     &[alt="Figma Logo"] {
       transform: scale(0.7);
     }

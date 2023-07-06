@@ -3,11 +3,12 @@
 :host {
   .about-me {
     @include mixins.flex-center;
-    gap: 5rem;
+    gap: 3rem;
+    justify-content: space-between;
     min-height: 90vh;
 
     img {
-      max-width: 27rem;
+      max-width: 24rem;
     }
 
     .about-me__info {

@@ -5,6 +5,7 @@
   .introduction {
     @include mixins.flex-center;
     gap: 5rem;
+    justify-content: space-evenly;
     min-height: calc(100vh - 77px);
 
     .introduction__info {
