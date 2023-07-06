@@ -1,0 +1,178 @@
+{
+  "enUS": {
+    "header": {
+      "navItems": ["Home", "About Me", "Projects", "Contact"]
+    },
+    "introduction": {},
+    "skills": {},
+    "aboutMe": {},
+    "projects": [
+      {
+        "imgSrc": "../../../../assets/img/projects/green-food.png",
+        "title": "Green Food",
+        "description": "Green Food is a landing page for a fictional vegan restaurant. It shows meal categories, a carousel with Food & Appetizers, a menu with some of our products, an about me section, as well as a footer which has some links and payment methods. This landing page has an appealing design, combined with a nice color palette and it's fully responsive.",
+        "techStack": ["HTML", "TailwindCSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/greenfood",
+        "deployUrl": "https://guilhermescr.github.io/greenfood/src/en/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/pokeboard.png",
+        "title": "PokéBoard",
+        "description": "",
+        "techStack": [
+          "Angular",
+          "TypeScript",
+          "RxJS",
+          "SCSS",
+          "UUID",
+          "ngx-pagination",
+          "ngx-toastr"
+        ],
+        "repositoryUrl": "https://github.com/guilhermescr/pokeboard",
+        "deployUrl": "https://pokeboard.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/nexus-store.png",
+        "title": "Nexus Store",
+        "description": "An e-commerce for gaming and computer stuff.",
+        "techStack": ["ReactJS", "CSS Modules"],
+        "repositoryUrl": "https://github.com/guilhermescr/nexus-store",
+        "deployUrl": "https://nexustore.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/manage-tasks.png",
+        "title": "Manage Tasks",
+        "description": "",
+        "techStack": ["Angular", "TypeScript", "SCSS", "Firebase"],
+        "repositoryUrl": "https://github.com/guilhermescr/angular-todo-list",
+        "deployUrl": "https://managetasks.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/json-generator.png",
+        "title": "JSON Generator",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/json-generator",
+        "deployUrl": "https://generatejson.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/memory-game.png",
+        "title": "Memory Game",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/memory-game",
+        "deployUrl": "https://mmgame.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/ng-postgram.png",
+        "title": "NGPostGram",
+        "description": "",
+        "techStack": ["Angular", "TypeScript", "SCSS", "Ant Design", "GraphQL"],
+        "repositoryUrl": "https://github.com/guilhermescr/angular-challenge",
+        "deployUrl": "https://ngpostgram.vercel.app/login"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/simple-blog.png",
+        "title": "Simple Blog",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript", "NodeJS"],
+        "repositoryUrl": "https://github.com/guilhermescr/simple-blog",
+        "apiRepositoryUrl": "https://github.com/guilhermescr/simple-blog-api",
+        "apiDeployUrl": "https://simple-blog-api-v3aa.onrender.com/blog",
+        "deployUrl": "https://blogsimple.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/live-chat.png",
+        "title": "Live Chat",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/live_chat",
+        "deployUrl": "https://guilhermescr.github.io/live_chat/pages/chat"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/modern-pokedex.png",
+        "title": "Modern Pokédex",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/modern-pokedex",
+        "deployUrl": "https://guilhermescr.github.io/modern-pokedex/with-javascript/modern-pokedex"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/galoa-slaca13.png",
+        "title": "Galoa Slaca13",
+        "description": "",
+        "techStack": ["HTML", "CSS"],
+        "repositoryUrl": "https://github.com/guilhermescr/galoa-13slaca",
+        "deployUrl": "https://guilhermescr.github.io/galoa-13slaca/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/flex-tourisms.png",
+        "title": "Flex Tourisms",
+        "description": "",
+        "techStack": ["HTML", "CSS"],
+        "repositoryUrl": "https://github.com/guilhermescr/flexbox-landing-page-dio",
+        "deployUrl": "https://flex-tourisms.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/devguiga-linktree.png",
+        "title": "DevGuiga Linktree",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/devguiga",
+        "deployUrl": "https://devguiga.vercel.app/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/faq-collapse.png",
+        "title": "FAQ Collapse",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/50days50projects/tree/main/projects/faq-collapse",
+        "deployUrl": "https://guilhermescr.github.io/50days50projects/projects/faq-collapse/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/cars-garage.png",
+        "title": "Cars Garage",
+        "description": "",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/cars-garage",
+        "deployUrl": "https://guilhermescr.github.io/cars-garage/"
+      },
+      {
+        "imgSrc": "../../../../assets/img/projects/news-page.png",
+        "title": "News Page",
+        "description": "",
+        "techStack": ["HTML", "CSS"],
+        "repositoryUrl": "https://github.com/guilhermescr/site-responsivo",
+        "deployUrl": "https://guilhermescr.github.io/site-responsivo/"
+      }
+    ],
+    "contact": {}
+  },
+  "ptBR": {
+    "header": {
+      "navItems": ["Início", "Sobre Mim", "Projetos", "Contato"]
+    },
+    "introduction": {},
+    "skills": {},
+    "aboutMe": {},
+    "projects": [
+      {
+        "imgSrc": "../../../../assets/img/projects/green-food.png",
+        "title": "Green Food",
+        "description": "Green Food is a landing page for a fictional vegan restaurant. It shows meal categories, a carousel with Food & Appetizers, a menu with some of our products, an about me section, as well as a footer which has some links and payment methods. This landing page has an appealing design, combined with a nice color palette and it's fully responsive.",
+        "techStack": ["HTML", "TailwindCSS", "JavaScript"],
+        "repositoryUrl": "https://github.com/guilhermescr/greenfood",
+        "deployUrl": "https://guilhermescr.github.io/greenfood/src/pt-br/"
+      },
+      {
+        "imgSrc": "",
+        "title": "",
+        "description": "",
+        "techStack": [""],
+        "repositoryUrl": "",
+        "deployUrl": ""
+      }
+    ],
+    "contact": {}
+  }
+}

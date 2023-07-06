@@ -7,6 +7,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skills/skill/skill.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectComponent } from './projects/project/project.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { SkillComponent } from './skills/skill/skill.component';
     AboutMeComponent,
     SkillsComponent,
     SkillComponent,
+    ProjectsComponent,
+    ProjectComponent,
   ],
   imports: [CommonModule, SharedModule],
   exports: [
@@ -24,6 +28,7 @@ import { SkillComponent } from './skills/skill/skill.component';
     IntroductionComponent,
     AboutMeComponent,
     SkillsComponent,
+    ProjectsComponent,
   ],
 })
 export class CoreModule {}

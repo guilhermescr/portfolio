@@ -1,0 +1,11 @@
+<section class="projects">
+  <h2>Portfolio</h2>
+  <p>Take a look at what I've done so far 👀</p>
+
+  <section class="projects-cards">
+    <app-project
+      *ngFor="let project of projects; let i = index"
+      [project]="project" [index]="i"
+    ></app-project>
+  </section>
+</section>

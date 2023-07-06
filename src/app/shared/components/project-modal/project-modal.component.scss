@@ -1,0 +1,143 @@
+@use "../../../../assets/scss/partials/mixins";
+
+:host {
+  background-color: #000000aa;
+  @include mixins.flex-center;
+  left: 0;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .project-modal {
+    background-color: var(--bgColor);
+    border-radius: 0.7rem;
+    box-shadow: 0 0 0.3rem #1c4d1c inset;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    max-height: 90vh;
+    max-width: 40rem;
+    overflow-y: auto;
+    padding: 1.5rem;
+    position: relative;
+    width: 100%;
+
+    .return-to-projects-button {
+      background-color: var(--greenText);
+      border: none;
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      @include mixins.flex-center;
+      left: 1.5rem;
+      padding: 0.4rem;
+      position: absolute;
+      top: 1.5rem;
+      width: max-content;
+
+      &:hover {
+        filter: saturate(1.2);
+      }
+
+      &:active {
+        opacity: 0.9;
+      }
+    }
+
+    h3 {
+      color: var(--greenText);
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    img {
+      border: 2px solid #484;
+      border-radius: 0.8rem;
+      width: 100%;
+    }
+
+    p {
+      color: var(--textColor);
+      font-weight: 500;
+      line-height: 1.6rem;
+      text-align: justify;
+    }
+
+    .tech-stack {
+      border-block: 2px solid #484;
+      padding-block: 1rem;
+      @include mixins.flex-center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
+
+      span {
+        background-color: var(--greenText);
+        border-radius: 0.4rem;
+        color: #fff;
+        font-weight: 500;
+        padding: 0.6rem 1rem;
+      }
+    }
+
+    .project-links {
+      @include mixins.flex-center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
+
+      button {
+        background-color: transparent;
+        border: 2px solid var(--greenText);
+        border-radius: 0.6rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: all 0.15s linear;
+
+        &:hover {
+          background-color: var(--greenText);
+
+          a {
+            border-radius: 0.6rem;
+            color: #fff;
+
+            svg {
+              * {
+                fill: #fff;
+              }
+            }
+          }
+        }
+
+        a {
+          color: var(--greenText);
+          @include mixins.flex-center;
+          gap: 0.5rem;
+          padding: 0.7rem;
+          text-decoration: none;
+
+          svg {
+            width: 1.2rem;
+
+            * {
+              fill: var(--bgReverse);
+            }
+          }
+
+          .link-icon:not(svg) {
+            @include mixins.flex-center;
+            align-items: flex-end;
+            font-size: 1.3rem;
+            height: max-content;
+            width: max-content;
+          }
+        }
+      }
+    }
+  }
+}
