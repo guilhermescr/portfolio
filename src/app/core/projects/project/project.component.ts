@@ -21,7 +21,7 @@ export class ProjectComponent {
   getShortProjectDescription(): void {
     const shortProjectDescription = this.project.description
       .split(' ')
-      .slice(0, 31)
+      .slice(0, 28)
       .join(' ')
       .concat('...');
 

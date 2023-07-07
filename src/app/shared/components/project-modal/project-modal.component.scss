@@ -29,6 +29,7 @@
       background-color: var(--greenText);
       border: none;
       border-radius: 50%;
+      box-shadow: 0 0 8px #484 inset;
       color: #fff;
       cursor: pointer;
       @include mixins.flex-center;
@@ -52,6 +53,29 @@
       font-size: 2rem;
       font-weight: 800;
       text-align: center;
+    }
+
+    .zoom-in-button {
+      background-color: var(--greenText);
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #484 inset;
+      color: #fff;
+      cursor: pointer;
+      @include mixins.flex-center;
+      padding: 0.4rem;
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      width: max-content;
+
+      &:hover {
+        filter: saturate(1.2);
+      }
+
+      &:active {
+        opacity: 0.9;
+      }
     }
 
     img {
@@ -137,6 +161,81 @@
             width: max-content;
           }
         }
+      }
+    }
+  }
+
+  .fullscreen-project {
+    background-color: var(--bgColor);
+    height: 100vh;
+    left: 0;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    .zoom-warning {
+      color: var(--bgReverse);
+      font-weight: 700;
+      left: 0;
+      position: fixed;
+      text-align: center;
+      top: 50%;
+      transform: translate(-45%, -50%) rotate(-90deg);
+    }
+
+    @keyframes zoonInAnimation {
+      0% {
+        transform: scale(0) translate(-50%, -50%);
+      }
+
+      100% {
+        transform: scale(1) translate(-50%, -50%);
+      }
+    }
+
+    .fullscreen-project-screenshot {
+      animation: zoonInAnimation 200ms linear;
+      border: 2px solid #484;
+      border-radius: 0.8rem;
+      left: 50%;
+      position: fixed;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+
+    .zoom-out-button {
+      background-color: var(--greenText);
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #484 inset;
+      color: #fff;
+      cursor: pointer;
+      @include mixins.flex-center;
+      padding: 0.4rem;
+      position: fixed;
+      right: 1rem;
+      top: 1rem;
+      width: max-content;
+
+      &:hover {
+        filter: saturate(1.2);
+      }
+
+      &:active {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  :host {
+    .project-modal {
+      h3 {
+        font-size: 1.8rem;
       }
     }
   }

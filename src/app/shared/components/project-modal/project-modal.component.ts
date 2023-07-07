@@ -9,8 +9,17 @@ import { Project } from 'src/app/shared/models/project.model';
 export class ProjectModalComponent {
   @Input() project!: Project;
   @Output() returnToProjectsEvent = new EventEmitter();
+  isImageFullscreen: boolean = false;
 
   returnToProjectsSection(): void {
     this.returnToProjectsEvent.emit();
+  }
+
+  zoomInProjectImage(): void {
+    this.isImageFullscreen = true;
+  }
+
+  zoomOutProjectImage(): void {
+    this.isImageFullscreen = false;
   }
 }

@@ -1,3 +1,8 @@
+interface Link {
+  linkUrl: string;
+  linkPlaceholder: string;
+}
+
 export interface Project {
   imgSrc: string;
   title: string;
@@ -7,4 +12,5 @@ export interface Project {
   apiRepositoryUrl?: string;
   apiDeployUrl?: string;
   deployUrl: string;
+  otherLinks?: Link[];
 }

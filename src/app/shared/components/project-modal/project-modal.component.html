@@ -1,5 +1,10 @@
 <section class="project-modal">
-  <button class="return-to-projects-button" (click)="returnToProjectsSection()">
+  <button
+    class="return-to-projects-button"
+    (click)="returnToProjectsSection()"
+    matTooltip="Return To Projects Section"
+    aria-label="Button to close the project modal"
+  >
     <mat-icon
       aria-hidden="false"
       aria-label="Arrow Back Icon"
@@ -8,6 +13,19 @@
   </button>
 
   <h3>{{ project.title }}</h3>
+
+  <button
+    class="zoom-in-button"
+    (click)="zoomInProjectImage()"
+    matTooltip="Zoom In Project Image"
+    aria-label="Button to zoom in the project image"
+  >
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Zoom In Icon"
+      fontIcon="zoom_in"
+    ></mat-icon>
+  </button>
 
   <img src="{{ project.imgSrc }}" alt="{{ project.title }} Project" />
 
@@ -91,3 +109,26 @@
     </button>
   </div>
 </section>
+
+<div class="fullscreen-project" *ngIf="isImageFullscreen">
+  <p class="zoom-warning">This feature works best for larger devices.</p>
+
+  <img
+    class="fullscreen-project-screenshot"
+    src="{{ project.imgSrc }}"
+    alt="{{ project.title }} Project"
+  />
+
+  <button
+    class="zoom-out-button"
+    (click)="zoomOutProjectImage()"
+    matTooltip="Zoom Out Project Image"
+    aria-label="Button to zoom out the project image"
+  >
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Zoom Out Icon"
+      fontIcon="zoom_out"
+    ></mat-icon>
+  </button>
+</div>

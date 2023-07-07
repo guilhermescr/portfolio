@@ -1,6 +1,7 @@
 <article class="project-card">
   <img
-    class="project-screenshot" [class.hasOrder]="hasOrder1"
+    class="project-screenshot"
+    [class.hasOrder]="hasOrder1"
     src="{{ project.imgSrc }}"
     alt="{{ project.title }} Project"
   />
@@ -49,6 +50,18 @@
       <button tabindex="-1">
         <a href="{{ project.deployUrl }}" target="_blank" rel="external">
           Live Demo
+          <mat-icon
+            class="link-icon"
+            aria-hidden="false"
+            aria-label="Launch Icon"
+            fontIcon="launch"
+          ></mat-icon>
+        </a>
+      </button>
+
+      <button tabindex="-1" *ngFor="let link of project.otherLinks">
+        <a href="{{ link.linkUrl }}" target="_blank" rel="external">
+          {{ link.linkPlaceholder }}
           <mat-icon
             class="link-icon"
             aria-hidden="false"

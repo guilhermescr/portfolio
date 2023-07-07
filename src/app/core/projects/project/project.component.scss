@@ -71,6 +71,7 @@
 
       .project-links {
         @include mixins.flex-center;
+        flex-wrap: wrap;
         gap: 1rem;
         justify-content: flex-start;
 
@@ -136,10 +137,8 @@
         margin-inline: auto;
       }
 
-      &:nth-child(even) {
-        > *:first-child {
-          order: initial;
-        }
+      .project-screenshot.hasOrder {
+        order: initial;
       }
     }
   }
