@@ -1,0 +1,43 @@
+@use "../../../../assets/scss/partials/mixins";
+
+:host {
+  button {
+    background-color: var(--greenText);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #484 inset;
+    color: #fff;
+    cursor: pointer;
+    @include mixins.flex-center;
+    padding: 0.4rem;
+    width: max-content;
+
+    &:hover {
+      filter: saturate(1.2);
+    }
+
+    &:active {
+      opacity: 0.9;
+    }
+  }
+
+  .return,
+  .zoomIn {
+    position: absolute;
+    top: 1.5rem;
+  }
+
+  .return {
+    left: 1.5rem;
+  }
+
+  .zoomIn {
+    right: 1.5rem;
+  }
+
+  .zoomOut {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+  }
+}

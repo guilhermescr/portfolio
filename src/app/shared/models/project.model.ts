@@ -1,7 +1,4 @@
-interface Link {
-  linkUrl: string;
-  linkPlaceholder: string;
-}
+import { Link } from './link.model';
 
 export interface Project {
   imgSrc: string;

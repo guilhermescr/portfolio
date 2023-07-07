@@ -25,57 +25,11 @@
     position: relative;
     width: 100%;
 
-    .return-to-projects-button {
-      background-color: var(--greenText);
-      border: none;
-      border-radius: 50%;
-      box-shadow: 0 0 8px #484 inset;
-      color: #fff;
-      cursor: pointer;
-      @include mixins.flex-center;
-      left: 1.5rem;
-      padding: 0.4rem;
-      position: absolute;
-      top: 1.5rem;
-      width: max-content;
-
-      &:hover {
-        filter: saturate(1.2);
-      }
-
-      &:active {
-        opacity: 0.9;
-      }
-    }
-
     h3 {
       color: var(--greenText);
       font-size: 2rem;
       font-weight: 800;
       text-align: center;
-    }
-
-    .zoom-in-button {
-      background-color: var(--greenText);
-      border: none;
-      border-radius: 50%;
-      box-shadow: 0 0 8px #484 inset;
-      color: #fff;
-      cursor: pointer;
-      @include mixins.flex-center;
-      padding: 0.4rem;
-      position: absolute;
-      right: 1.5rem;
-      top: 1.5rem;
-      width: max-content;
-
-      &:hover {
-        filter: saturate(1.2);
-      }
-
-      &:active {
-        opacity: 0.9;
-      }
     }
 
     img {
@@ -113,55 +67,6 @@
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: flex-start;
-
-      button {
-        background-color: transparent;
-        border: 2px solid var(--greenText);
-        border-radius: 0.6rem;
-        cursor: pointer;
-        font-size: 0.9rem;
-        font-weight: 600;
-        transition: all 0.15s linear;
-
-        &:hover {
-          background-color: var(--greenText);
-
-          a {
-            border-radius: 0.6rem;
-            color: #fff;
-
-            svg {
-              * {
-                fill: #fff;
-              }
-            }
-          }
-        }
-
-        a {
-          color: var(--greenText);
-          @include mixins.flex-center;
-          gap: 0.5rem;
-          padding: 0.7rem;
-          text-decoration: none;
-
-          svg {
-            width: 1.2rem;
-
-            * {
-              fill: var(--bgReverse);
-            }
-          }
-
-          .link-icon:not(svg) {
-            @include mixins.flex-center;
-            align-items: flex-end;
-            font-size: 1.3rem;
-            height: max-content;
-            width: max-content;
-          }
-        }
-      }
     }
   }
 
@@ -204,29 +109,6 @@
       top: 50%;
       transform: translate(-50%, -50%);
       width: 80%;
-    }
-
-    .zoom-out-button {
-      background-color: var(--greenText);
-      border: none;
-      border-radius: 50%;
-      box-shadow: 0 0 8px #484 inset;
-      color: #fff;
-      cursor: pointer;
-      @include mixins.flex-center;
-      padding: 0.4rem;
-      position: fixed;
-      right: 1rem;
-      top: 1rem;
-      width: max-content;
-
-      &:hover {
-        filter: saturate(1.2);
-      }
-
-      &:active {
-        opacity: 0.9;
-      }
     }
   }
 }
