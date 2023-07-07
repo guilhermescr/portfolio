@@ -51,6 +51,11 @@
     ></app-deploy-button>
 
     <app-deploy-button [deployUrl]="project.deployUrl"></app-deploy-button>
+
+    <app-external-link-button
+      *ngFor="let link of project.otherLinks"
+      [link]="link"
+    ></app-external-link-button>
   </div>
 </section>
 

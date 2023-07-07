@@ -92,6 +92,7 @@
     .introduction {
       flex-direction: column-reverse;
       gap: 2rem;
+      margin-bottom: 3rem;
 
       .introduction__info {
         h1 {
@@ -100,7 +101,24 @@
         }
 
         .social-media-buttons {
-          @include mixins.flex-center(column);
+          display: grid;
+          grid-template-columns: 1fr;
+          margin-inline: auto;
+          width: max-content;
+
+          button {
+            max-width: 11rem;
+
+            a {
+              .social-media-buttons__linkedin {
+                width: 1.3rem;
+              }
+
+              .social-media-buttons__github {
+                width: 1.5rem;
+              }
+            }
+          }
         }
       }
     }
