@@ -2,11 +2,35 @@
   <h2>Portfolio</h2>
   <p>Take a look at what I've done so far 👀</p>
 
-  <section class="projects-cards">
+  <section
+    class="projects-cards"
+    *ngIf="areAllProjectsActive; else showFewProjectsSection"
+  >
     <app-project
       *ngFor="let project of projects; let i = index"
       [project]="project"
       [index]="i"
     ></app-project>
   </section>
+
+  <ng-template #showFewProjectsSection>
+    <section class="projects-cards">
+      <app-project
+        *ngFor="let project of fewProjects; let i = index"
+        [project]="project"
+        [index]="i"
+      ></app-project>
+    </section>
+  </ng-template>
+
+  <p class="current-amount-of-projects">
+    Projects ({{ areAllProjectsActive ? projects.length : fewProjects.length }})
+  </p>
+
+  <button
+    class="see-projects-button"
+    (click)="areAllProjectsActive ? showFewProjects() : showAllProjects()"
+  >
+    {{ areAllProjectsActive ? "See Less Projects" : "See All Projects" }}
+  </button>
 </section>

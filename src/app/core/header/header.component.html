@@ -42,6 +42,7 @@
         [class.active]="currentTab === 'about-me'"
         (click)="currentTab = 'about-me'"
         (click)="closeNavbarMenu()"
+        (click)="scrollToTheSection()"
       >
         About Me
       </li>
@@ -49,6 +50,7 @@
         [class.active]="currentTab === 'projects'"
         (click)="currentTab = 'projects'"
         (click)="closeNavbarMenu()"
+        (click)="scrollToTheSection()"
       >
         Projects
       </li>
@@ -56,6 +58,7 @@
         [class.active]="currentTab === 'contact'"
         (click)="currentTab = 'contact'"
         (click)="closeNavbarMenu()"
+        (click)="scrollToTheSection()"
       >
         Contact
       </li>

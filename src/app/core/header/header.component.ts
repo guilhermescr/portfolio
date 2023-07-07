@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, EventEmitter, Output, Renderer2 } from '@angular/core';
 import { ThemesService } from 'src/app/shared/services/themes.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { ThemesService } from 'src/app/shared/services/themes.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  @Output() scrollToTheSectionEvent = new EventEmitter<string>();
   currentMode: string = this.themesService.getCurrentModeValue();
   currentTab: string = 'home';
   isNavbarOpen: boolean = false;
@@ -31,5 +32,9 @@ export class HeaderComponent {
 
   closeNavbarMenu(): void {
     this.isNavbarOpen = false;
+  }
+
+  scrollToTheSection(): void {
+    this.scrollToTheSectionEvent.emit(this.currentTab);
   }
 }

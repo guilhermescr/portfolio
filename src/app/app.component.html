@@ -1,5 +1,5 @@
 <app-wrapper>
-  <app-header></app-header>
+  <app-header (scrollToTheSectionEvent)="scrollToTheSection($event)"></app-header>
 </app-wrapper>
 
 <app-wrapper>
@@ -10,14 +10,14 @@
   <app-skills></app-skills>
 </app-wrapper>
 
-<app-wrapper>
+<app-wrapper #aboutMe>
   <app-about-me></app-about-me>
 </app-wrapper>
 
-<app-wrapper>
+<app-wrapper #projects>
   <app-projects></app-projects>
 </app-wrapper>
 
-<app-footer></app-footer>
+<app-footer #contact></app-footer>
 
 <app-go-to-the-top></app-go-to-the-top>

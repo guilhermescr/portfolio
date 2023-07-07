@@ -23,6 +23,33 @@
       @include mixins.flex-center(column);
       gap: 2.5rem;
     }
+
+    .current-amount-of-projects {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    .see-projects-button {
+      background-color: var(--greenText);
+      border: none;
+      border-radius: 0.8rem;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-inline: auto;
+      padding: 0.9rem 2rem;
+      text-transform: uppercase;
+
+      &:hover {
+        filter: grayscale(20%);
+      }
+
+      &:active {
+        opacity: 0.9;
+      }
+    }
   }
 }
 
