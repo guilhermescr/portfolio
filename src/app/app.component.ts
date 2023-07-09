@@ -63,7 +63,7 @@ export class AppComponent {
       if (index + 1 === this.tabs.length) {
         this.tabsScrollTop.push(tabElement.offsetTop - 400);
       } else {
-        this.tabsScrollTop.push(tabElement.offsetTop);
+        this.tabsScrollTop.push(tabElement.offsetTop - 100);
       }
     });
   }
