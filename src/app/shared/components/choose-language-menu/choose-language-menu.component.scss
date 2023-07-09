@@ -1,0 +1,78 @@
+@use "../../../../assets/scss/partials/base";
+@use "../../../../assets/scss/partials/mixins";
+
+:host {
+  background-color: #000000de;
+  @include mixins.flex-center;
+  left: 0;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
+  .choose-language-menu {
+    @include mixins.flex-center(column);
+    gap: 2.5rem;
+    max-width: 32rem;
+    width: 100%;
+
+    h2 {
+      color: #fff;
+      max-width: 17rem;
+      text-align: center;
+    }
+
+    .language-buttons {
+      @include mixins.flex-center;
+      gap: 2rem;
+      width: 100%;
+
+      button {
+        background-color: base.$headingGradient-secondary-color;
+        border: none;
+        border-radius: 0.7rem;
+        color: #fff;
+        cursor: pointer;
+        @include mixins.flex-center;
+        gap: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+
+        &:active {
+          opacity: 0.9;
+        }
+
+        svg {
+          width: 2rem;
+
+          &#brazil-flag {
+            fill: #1c350f;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  :host {
+    .choose-language-menu {
+      padding: 2rem;
+
+      .language-buttons {
+        @include mixins.flex-center(column);
+
+        button {
+          max-width: 14.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

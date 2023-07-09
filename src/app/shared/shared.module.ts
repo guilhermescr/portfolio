@@ -9,6 +9,7 @@ import { GithubCodeButtonComponent } from './components/github-code-button/githu
 import { ExternalLinkButtonComponent } from './components/external-link-button/external-link-button.component';
 import { RoundedButtonComponent } from './components/rounded-button/rounded-button.component';
 import { DeployButtonComponent } from './components/deploy-button/deploy-button.component';
+import { ChooseLanguageMenuComponent } from './components/choose-language-menu/choose-language-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DeployButtonComponent } from './components/deploy-button/deploy-button.
     ExternalLinkButtonComponent,
     RoundedButtonComponent,
     DeployButtonComponent,
+    ChooseLanguageMenuComponent,
   ],
   imports: [CommonModule, MatIconModule, MatTooltipModule],
   exports: [
@@ -29,6 +31,7 @@ import { DeployButtonComponent } from './components/deploy-button/deploy-button.
     ExternalLinkButtonComponent,
     RoundedButtonComponent,
     DeployButtonComponent,
+    ChooseLanguageMenuComponent,
     MatIconModule,
     MatTooltipModule,
   ],

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from 'src/app/shared/models/project.model';
+import { LangsService } from 'src/app/shared/services/langs.service';
 
 @Component({
   selector: 'app-project',
@@ -12,6 +13,12 @@ export class ProjectComponent {
   projectShortDescription: string = '';
   isModalOpen: boolean = false;
   hasOrder1: boolean = false;
+  seeMoreMsg;
+
+  constructor(private langsService: LangsService) {
+    this.seeMoreMsg =
+      this.langsService.getPortfolioBasedOnCurrentLang().portfolio.seeMoreInfo;
+  }
 
   ngOnInit(): void {
     this.hasOrder1 = this.index % 2 === 1;

@@ -11,7 +11,7 @@
     <p>
       {{ projectShortDescription }}
       <button class="project-info__see-more" (click)="openProjectModal()">
-        See More...
+        {{ seeMoreMsg }}...
       </button>
     </p>
 
@@ -25,6 +25,18 @@
       ></app-github-code-button>
 
       <app-deploy-button [deployUrl]="project.deployUrl"></app-deploy-button>
+
+      <app-github-code-button
+        *ngIf="project.apiRepositoryUrl"
+        [repositoryUrl]="project.apiRepositoryUrl"
+        [isApiCode]="true"
+      ></app-github-code-button>
+
+      <app-deploy-button
+        *ngIf="project.apiDeployUrl"
+        [deployUrl]="project.apiDeployUrl"
+        [isApiDeploy]="true"
+      ></app-deploy-button>
 
       <app-external-link-button
         *ngFor="let link of project.otherLinks"

@@ -5,7 +5,9 @@ import {
   Output,
   Renderer2,
 } from '@angular/core';
+import { LangsService } from 'src/app/shared/services/langs.service';
 import { ThemesService } from 'src/app/shared/services/themes.service';
+import portfolio from 'src/portfolio.json';
 
 @Component({
   selector: 'app-header',
@@ -19,14 +21,26 @@ export class HeaderComponent {
 
   currentMode: string = this.themesService.getCurrentModeValue();
   isNavbarOpen: boolean = false;
+  navItems: string[] = [];
+  navNames: string[] = [];
 
   constructor(
     private renderer: Renderer2,
-    private themesService: ThemesService
+    private themesService: ThemesService,
+    private langsService: LangsService
   ) {
     this.themesService.currentMode.subscribe((currentModeValue) => {
       this.currentMode = currentModeValue;
     });
+
+    this.langsService.currentLang.subscribe(() => this.setNavVariables());
+
+    this.setNavVariables();
+  }
+
+  setNavVariables(): void {
+    this.navItems = portfolio.enUS.header.navItems;
+    this.navNames = this.langsService.portfolio.header.navItems;
   }
 
   toggleCurrentMode(): void {
@@ -47,5 +61,9 @@ export class HeaderComponent {
     this.scrollToSectionEvent.emit(currentSection);
 
     this.closeNavbarMenu();
+  }
+
+  capitalizeNavItem(navItem: string): string {
+    return navItem.charAt(0).toUpperCase() + navItem.slice(1);
   }
 }

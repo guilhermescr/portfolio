@@ -33,34 +33,11 @@
 
     <ul>
       <li
-        [class.active]="currentTab === 'home'"
-        (click)="scrollToSection('home')"
+        *ngFor="let navItem of navItems; let i = index"
+        [class.active]="currentTab === navItem"
+        (click)="scrollToSection(navItem)"
       >
-        Home
-      </li>
-      <li
-        [class.active]="currentTab === 'skills'"
-        (click)="scrollToSection('skills')"
-      >
-        Skills
-      </li>
-      <li
-        [class.active]="currentTab === 'about-me'"
-        (click)="scrollToSection('about-me')"
-      >
-        About Me
-      </li>
-      <li
-        [class.active]="currentTab === 'projects'"
-        (click)="scrollToSection('projects')"
-      >
-        Projects
-      </li>
-      <li
-        [class.active]="currentTab === 'contact'"
-        (click)="scrollToSection('contact')"
-      >
-        Contact
+        {{ capitalizeNavItem(navNames[i]) }}
       </li>
     </ul>
   </nav>

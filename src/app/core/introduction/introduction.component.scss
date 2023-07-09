@@ -124,3 +124,17 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  :host {
+    .introduction {
+      .introduction__info {
+        h1 {
+          span:nth-child(3) {
+            max-width: 50vw;
+          }
+        }
+      }
+    }
+  }
+}

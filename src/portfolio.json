@@ -1,185 +1,374 @@
 {
   "enUS": {
     "header": {
-      "navItems": ["Home", "About Me", "Projects", "Contact"]
+      "navItems": ["home", "skills", "about", "projects", "contact"]
     },
-    "introduction": {},
-    "skills": {},
-    "aboutMe": {},
-    "projects": [
-      {
-        "imgSrc": "../../../../assets/img/projects/green-food.webp",
-        "title": "Green Food",
-        "description": "Green Food is a landing page for a fictional vegan restaurant. It shows meal categories, a carousel with Food & Appetizers, a menu with some of our products, an about me section, as well as a footer which has some links and payment methods. This landing page has an appealing design, combined with a nice color palette and it's fully responsive.",
-        "techStack": ["HTML", "TailwindCSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/greenfood",
-        "deployUrl": "https://guilhermescr.github.io/greenfood/src/en/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/pokeboard.webp",
-        "title": "PokéBoard",
-        "description": "The PokéBoard is a web application built with Angular that provides a user-friendly interface for exploring Pokémon data from the PokéAPI. The application includes an Auth Guard feature that ensures only logged-in users can access specific routes, providing enhanced security and preventing unauthorized access. The dashboard incorporates Angular Material and SCSS to enhance the UI design and provide a visually appealing experience. For more info, check the README in the GitHub repository.",
-        "techStack": [
-          "Angular",
-          "Angular Material",
-          "TypeScript",
-          "RxJS",
-          "SCSS",
-          "UUID",
-          "ngx-pagination",
-          "ngx-toastr"
-        ],
-        "repositoryUrl": "https://github.com/guilhermescr/pokeboard",
-        "deployUrl": "https://pokeboard.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/nexus-store.webp",
-        "title": "Nexus Store",
-        "description": "Nexus Store is a mobile-first ReactJS-based web application that offers a seamless shopping experience. Users can explore a wide range of products, add new items, edit or delete existing ones, and view detailed product information through dynamic routing. With the help of CSS Modules, the application ensures a visually appealing design. Notably, Nexus Store leverages Local Storage to save product information, enabling users to seamlessly access their chosen products even after refreshing or reopening the application. Additionally, the cart functionality allows users to conveniently add products for future purchase, manage quantities... This project features a carousel showcasing the hottest products and offers. With its intuitive interface and efficient use of Local Storage, Nexus Store delivers a user-friendly platform for browsing and purchasing products. However, this project does not have a checkout feature yet.",
-        "techStack": ["ReactJS", "SwiperJS", "CSS Modules", "Local Storage"],
-        "repositoryUrl": "https://github.com/guilhermescr/nexus-store",
-        "deployUrl": "https://nexustore.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/manage-tasks.webp",
-        "title": "Manage Tasks",
-        "description": "Manage Tasks is a powerful to-do list website built using Angular, TypeScript, SCSS, and Firebase. This web application offers a comprehensive task management solution for users to stay organized and productive. With an intuitive user interface powered by Angular, users can easily create, update, and delete tasks. The use of TypeScript ensures a robust and scalable codebase. SCSS styling enhances the visual appeal of the website, providing a seamless user experience. Leveraging the capabilities of Firebase, Manage Tasks securely stores tasks in the cloud, allowing users to access and manage their to-do lists from any device with internet connectivity. Whether it's personal task tracking or collaborative project management, Manage Tasks provides a reliable and efficient solution for organizing and prioritizing tasks.",
-        "techStack": ["Angular", "TypeScript", "SCSS", "Firebase"],
-        "repositoryUrl": "https://github.com/guilhermescr/angular-todo-list",
-        "deployUrl": "https://managetasks.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/json-generator.webp",
-        "title": "JSON Generator",
-        "description": "JSON Generator is an impressive freelancing project I undertook to help a friend overcome challenges during his internship. This intuitive web application, developed using HTML, CSS, and JavaScript, provides a valuable solution for generating JSON objects quickly and efficiently. Designed with a user-friendly CRUD interface, JSON Generator simplifies the process of writing JSONs by allowing users to effortlessly input property-value pairs and create nested structures with ease. By leveraging this powerful tool, users can save significant time and focus on other critical tasks, enhancing productivity in their projects. JSON Generator stands as a testament to my ability to deliver practical and impactful solutions, showcasing my expertise in web development and problem-solving.",
-        "techStack": ["HTML", "CSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/json-generator",
-        "deployUrl": "https://generatejson.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/memory-game.webp",
-        "title": "Memory Game",
-        "description": "Memory Game is an engaging web application that offers a delightful gaming experience. With responsive design and language selection, users can enjoy the game in Portuguese or English. The menu provides options for playing, configuring settings, accessing the terminal, and viewing credits. Choose from a variety of exciting themes, including popular anime and TV series. The game offers multiple difficulty levels and a life system for a challenging experience. Enjoy classic or random modes and customize the game's appearance using templates. With sound effects, animations, and achievements, Memory Game guarantees a captivating gameplay. Manage your profile, track progress, and play with levels. The terminal allows for additional interactions, while the kebab menu provides convenient options. Discover the joy of matching cards and achieve high scores in this addictive Memory Game.",
-        "techStack": ["HTML", "CSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/memory-game",
-        "deployUrl": "https://mmgame.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/ng-postgram.webp",
-        "title": "NGPostGram",
-        "description": "NGPostGram stands out with its seamless integration of a GraphQL API, enabling efficient data retrieval and management for posts. This dynamic project allows users to consume data from the GraphQL API to perform essential operations such as creating and deleting posts. With a secure authentication system and an auth guard, NGPostGram ensures that users can securely access and interact with the platform's functionalities. Users can browse and explore a curated selection of posts, create new content, and remove existing posts as needed. NGPostGram harnesses the power of GraphQL to deliver a streamlined and user-friendly experience for managing and engaging with posts.",
-        "techStack": ["Angular", "TypeScript", "SCSS", "Ant Design", "GraphQL"],
-        "repositoryUrl": "https://github.com/guilhermescr/angular-challenge",
-        "deployUrl": "https://ngpostgram.vercel.app/login"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/simple-blog.webp",
-        "title": "Simple Blog",
-        "description": "Simple Blog is a personally developed project featuring a two-column layout. The first section allows users to perform CRUD operations on comments, including adding, updating, and deleting them. Comments can also be retrieved by their ID, which is displayed in the browser's console. In the second section, comments are displayed and stored in an API I created with the help of online tutorials. The project's API is built using Node.js and utilizes JSON Server for seamless data management. This integration ensures efficient data persistence and retrieval, enhancing the overall functionality of Simple Blog.",
-        "techStack": ["HTML", "CSS", "JavaScript", "NodeJS"],
-        "repositoryUrl": "https://github.com/guilhermescr/simple-blog",
-        "apiRepositoryUrl": "https://github.com/guilhermescr/simple-blog-api",
-        "apiDeployUrl": "https://simple-blog-api-v3aa.onrender.com/blog",
-        "deployUrl": "https://blogsimple.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/live-chat.webp",
-        "title": "Talking App",
-        "description": "Talking App is an impressive collaborative live chat project that I developed with a friend. It combines a visually engaging landing page with a responsive navbar menu. The standout feature is the chat functionality, reminiscent of Instagram direct messages. Users can type messages in the textarea, which then appear in the chat interface. However, note that this is purely a visual experience, as the messages are not sent to other users. This project showcases a bit of my frontend development skills.",
-        "techStack": ["HTML", "CSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/live_chat",
-        "deployUrl": "https://guilhermescr.github.io/live_chat/pages/chat",
-        "otherLinks": [
-          {
-            "linkUrl": "https://guilhermescr.github.io/live_chat/",
-            "linkPlaceholder": "Talking App - Home"
-          }
-        ]
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/modern-pokedex.webp",
-        "title": "Modern Pokédex",
-        "description": "Modern Pokédex is a visually appealing and responsive web project that I developed using HTML, CSS, and JavaScript. It integrates with the PokéAPI, offering a comprehensive Pokémon database. With a power button, engaging animation, and convenient search field, users can explore and find Pokémon effortlessly. Navigation buttons enable seamless browsing, while the display section presents crucial Pokémon stats. Modern Pokédex brings the world of Pokémon to life, offering a captivating and user-friendly experience for trainers and enthusiasts alike. The Pokédex Body was made with HTML and CSS.",
-        "techStack": ["HTML", "CSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/modern-pokedex",
-        "deployUrl": "https://guilhermescr.github.io/modern-pokedex/with-javascript/modern-pokedex"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/galoa-slaca13.webp",
-        "title": "Galoa Slaca13",
-        "description": "Galoa Slaca13 is a technical test project that I developed as part of a frontend internship application process in Brazil. This scientific website showcases my skills in HTML and CSS, which were the specified requirements for the test. The website features an engaging and informative platform for scientific content. It includes a video, a detailed description, a summary, and a discussion section where users could interact through comments if I were allowed to use JavaScript. The visually appealing design is characterized by an appealing orange color scheme, which adds a touch of vibrancy and enhances the overall aesthetics. For this project, I followed a Figma template (link in the GitHub repository) provided by the company, demonstrating my ability to translate design concepts into a fully functional website using HTML and CSS.",
-        "techStack": ["HTML", "CSS"],
-        "repositoryUrl": "https://github.com/guilhermescr/galoa-13slaca",
-        "deployUrl": "https://guilhermescr.github.io/galoa-13slaca/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/flex-tourisms.webp",
-        "title": "Flex Tourisms",
-        "description": "Flex Tourisms is an immersive landing page project crafted using HTML and CSS, showcasing an elegant and captivating design. The page features various sections, starting with an engaging Who We Are segment that provides insights into the company's mission and values. The following sections highlight the wide range of services offered by Flex Tourisms, giving visitors a glimpse into the exceptional experiences they can expect. The Our Plans section presents enticing packages and options, enticing users to explore and choose their ideal travel plans. Throughout the design, flexbox is extensively utilized to ensure optimal responsiveness and seamless alignment of elements. The overall aesthetic embraces a pleasing blue color scheme, complementing the immersive travel theme. With its carefully curated content and visually appealing layout, Flex Tourisms creates an inviting and informative landing page experience.",
-        "techStack": ["HTML", "CSS"],
-        "repositoryUrl": "https://github.com/guilhermescr/flexbox-landing-page-dio",
-        "deployUrl": "https://flex-tourisms.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/devguiga-linktree.webp",
-        "title": "DevGuiga Linktree",
-        "description": "DevGuiga Linktree is a sleek and stylish project designed to enhance my online presence. Built using HTML, CSS, and JavaScript, it provides a personalized and dynamic platform similar to Linktree. This project is specifically created to showcase my various social media links and highlight my YouTube channel, conveniently accessible from a single location. With an aesthetically pleasing design, DevGuiga Linktree ensures that my Instagram bio is visually appealing and professionally presented. By leveraging the power of HTML, CSS, and JavaScript, this project offers a seamless and user-friendly experience, allowing my followers to easily navigate and connect with my online presence.",
-        "techStack": ["HTML", "CSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/devguiga",
-        "deployUrl": "https://devguiga.vercel.app/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/faq-collapse.webp",
-        "title": "FAQ Collapse",
-        "description": "FAQ Collapse is a project developed using HTML, CSS, and JavaScript that offers an intuitive and interactive way to present frequently asked questions. With its sleek design and user-friendly interface, the website displays a list of questions in a collapsible format. When users click on the arrow icon next to a question, the corresponding answer smoothly expands or collapses, providing a seamless and efficient browsing experience. By leveraging HTML, CSS, and JavaScript, FAQ Collapse offers a dynamic and engaging solution for organizing and accessing frequently asked questions, ensuring that users can easily find the information they need.",
-        "techStack": ["HTML", "CSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/50days50projects/tree/main/projects/faq-collapse",
-        "deployUrl": "https://guilhermescr.github.io/50days50projects/projects/faq-collapse/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/cars-garage.webp",
-        "title": "Cars Garage",
-        "description": "Cars Garage is a user-friendly website that enables users to add cars to their virtual garage. With a simple and intuitive interface, users can input details such as the car's brand, license plate, and owner. By utilizing the Date() method, the website automatically records and displays the timestamp when each car joins the garage. All car entries are conveniently stored in the browser's Local Storage, ensuring that the information persists even after closing or refreshing the page. Cars Garage provides a seamless and efficient solution for car management, allowing users to keep track of their vehicles in a digital format.",
-        "techStack": ["HTML", "CSS", "JavaScript", "Local Storage"],
-        "repositoryUrl": "https://github.com/guilhermescr/cars-garage",
-        "deployUrl": "https://guilhermescr.github.io/cars-garage/"
-      },
-      {
-        "imgSrc": "../../../../assets/img/projects/news-page.webp",
-        "title": "News Page",
-        "description": "News Page is a website that I developed to practice and showcase my HTML and CSS skills, with a focus on utilizing display grid and flexbox. The website features a visually appealing card-based layout where news articles are presented. Each card provides a summary and key details of the article, offering users a glimpse into the content. While the website focuses on displaying news in a concise format rather than showing complete articles, the emphasis remains on creating an engaging and polished user interface. By implementing grid and flexbox, I aimed to ensure optimal responsiveness and an enjoyable browsing experience. News Page reflects my dedication to honing my HTML and CSS abilities while delivering an attractive and functional website for news consumption.",
-        "techStack": ["HTML", "CSS"],
-        "repositoryUrl": "https://github.com/guilhermescr/site-responsivo",
-        "deployUrl": "https://guilhermescr.github.io/site-responsivo/"
+    "introduction": {
+      "h1": {
+        "span1": "Hi",
+        "span2": "I'm",
+        "span3": "Front-end Developer"
       }
-    ],
-    "contact": {}
+    },
+    "skills": {
+      "h2": "Skills"
+    },
+    "aboutMe": {
+      "h2": "About Me",
+      "location": "Salvador, Bahia, Brazil",
+      "description": "Front-end & Web Developer, experienced with HTML, SCSS, TypeScript/JavaScript, Angular, a bit of React, and some other technologies. I strive to build engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I'd like to work with outstanding web applications and to collaborate with cross-functional teams.",
+      "downloadCV": "Download CV"
+    },
+    "portfolio": {
+      "takeALook": "Take a look at what I've done so far",
+      "projects": [
+        {
+          "imgSrc": "../../../../assets/img/projects/green-food.webp",
+          "title": "Green Food",
+          "description": "Green Food is a landing page for a fictional vegan restaurant. It shows meal categories, a carousel with Food & Appetizers, a menu with some of our products, an about me section, as well as a footer which has some links and payment methods. This landing page has an appealing design, combined with a nice color palette and it's fully responsive.",
+          "techStack": ["HTML", "TailwindCSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/greenfood",
+          "deployUrl": "https://guilhermescr.github.io/greenfood/src/en/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/pokeboard.webp",
+          "title": "PokéBoard",
+          "description": "The PokéBoard is a web application built with Angular that provides a user-friendly interface for exploring Pokémon data from the PokéAPI. The application includes an Auth Guard feature that ensures only logged-in users can access specific routes, providing enhanced security and preventing unauthorized access. The dashboard incorporates Angular Material and SCSS to enhance the UI design and provide a visually appealing experience. For more info, check the README in the GitHub repository.",
+          "techStack": [
+            "Angular",
+            "Angular Material",
+            "TypeScript",
+            "RxJS",
+            "SCSS",
+            "UUID",
+            "ngx-pagination",
+            "ngx-toastr"
+          ],
+          "repositoryUrl": "https://github.com/guilhermescr/pokeboard",
+          "deployUrl": "https://pokeboard.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/nexus-store.webp",
+          "title": "Nexus Store",
+          "description": "Nexus Store is a mobile-first ReactJS-based web application that offers a seamless shopping experience. Users can explore a wide range of products, add new items, edit or delete existing ones, and view detailed product information through dynamic routing. With the help of CSS Modules, the application ensures a visually appealing design. Notably, Nexus Store leverages Local Storage to save product information, enabling users to seamlessly access their chosen products even after refreshing or reopening the application. Additionally, the cart functionality allows users to conveniently add products for future purchase, manage quantities... This project features a carousel showcasing the hottest products and offers. With its intuitive interface and efficient use of Local Storage, Nexus Store delivers a user-friendly platform for browsing and purchasing products. However, this project does not have a checkout feature yet.",
+          "techStack": ["ReactJS", "SwiperJS", "CSS Modules", "Local Storage"],
+          "repositoryUrl": "https://github.com/guilhermescr/nexus-store",
+          "deployUrl": "https://nexustore.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/manage-tasks.webp",
+          "title": "Manage Tasks",
+          "description": "Manage Tasks is a powerful to-do list website built using Angular, TypeScript, SCSS, and Firebase. This web application offers a comprehensive task management solution for users to stay organized and productive. With an intuitive user interface powered by Angular, users can easily create, update, and delete tasks. The use of TypeScript ensures a robust and scalable codebase. SCSS styling enhances the visual appeal of the website, providing a seamless user experience. Leveraging the capabilities of Firebase, Manage Tasks securely stores tasks in the cloud, allowing users to access and manage their to-do lists from any device with internet connectivity. Whether it's personal task tracking or collaborative project management, Manage Tasks provides a reliable and efficient solution for organizing and prioritizing tasks.",
+          "techStack": ["Angular", "TypeScript", "SCSS", "Firebase"],
+          "repositoryUrl": "https://github.com/guilhermescr/angular-todo-list",
+          "deployUrl": "https://managetasks.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/json-generator.webp",
+          "title": "JSON Generator",
+          "description": "JSON Generator is an impressive freelancing project I undertook to help a friend overcome challenges during his internship. This intuitive web application, developed using HTML, CSS, and JavaScript, provides a valuable solution for generating JSON objects quickly and efficiently. Designed with a user-friendly CRUD interface, JSON Generator simplifies the process of writing JSONs by allowing users to effortlessly input property-value pairs and create nested structures with ease. By leveraging this powerful tool, users can save significant time and focus on other critical tasks, enhancing productivity in their projects. JSON Generator stands as a testament to my ability to deliver practical and impactful solutions, showcasing my expertise in web development and problem-solving.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/json-generator",
+          "deployUrl": "https://generatejson.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/memory-game.webp",
+          "title": "Memory Game",
+          "description": "Memory Game is an engaging web application that offers a delightful gaming experience. With responsive design and language selection, users can enjoy the game in Portuguese or English. The menu provides options for playing, configuring settings, accessing the terminal, and viewing credits. Choose from a variety of exciting themes, including popular anime and TV series. The game offers multiple difficulty levels and a life system for a challenging experience. Enjoy classic or random modes and customize the game's appearance using templates. With sound effects, animations, and achievements, Memory Game guarantees a captivating gameplay. Manage your profile, track progress, and play with levels. The terminal allows for additional interactions, while the kebab menu provides convenient options. Discover the joy of matching cards and achieve high scores in this addictive Memory Game.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/memory-game",
+          "deployUrl": "https://mmgame.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/ng-postgram.webp",
+          "title": "NGPostGram",
+          "description": "NGPostGram stands out with its seamless integration of a GraphQL API, enabling efficient data retrieval and management for posts. This dynamic project allows users to consume data from the GraphQL API to perform essential operations such as creating and deleting posts. With a secure authentication system and an auth guard, NGPostGram ensures that users can securely access and interact with the platform's functionalities. Users can browse and explore a curated selection of posts, create new content, and remove existing posts as needed. NGPostGram harnesses the power of GraphQL to deliver a streamlined and user-friendly experience for managing and engaging with posts.",
+          "techStack": [
+            "Angular",
+            "TypeScript",
+            "SCSS",
+            "Ant Design",
+            "GraphQL"
+          ],
+          "repositoryUrl": "https://github.com/guilhermescr/angular-challenge",
+          "deployUrl": "https://ngpostgram.vercel.app/login"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/simple-blog.webp",
+          "title": "Simple Blog",
+          "description": "Simple Blog is a personally developed project featuring a two-column layout. The first section allows users to perform CRUD operations on comments, including adding, updating, and deleting them. Comments can also be retrieved by their ID, which is displayed in the browser's console. In the second section, comments are displayed and stored in an API I created with the help of online tutorials. The project's API is built using Node.js and utilizes JSON Server for seamless data management. This integration ensures efficient data persistence and retrieval, enhancing the overall functionality of Simple Blog.",
+          "techStack": ["HTML", "CSS", "JavaScript", "NodeJS"],
+          "repositoryUrl": "https://github.com/guilhermescr/simple-blog",
+          "apiRepositoryUrl": "https://github.com/guilhermescr/simple-blog-api",
+          "apiDeployUrl": "https://simple-blog-api-v3aa.onrender.com/blog",
+          "deployUrl": "https://blogsimple.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/live-chat.webp",
+          "title": "Talking App",
+          "description": "Talking App is an impressive collaborative live chat project that I developed with a friend. It combines a visually engaging landing page with a responsive navbar menu. The standout feature is the chat functionality, reminiscent of Instagram direct messages. Users can type messages in the textarea, which then appear in the chat interface. However, note that this is purely a visual experience, as the messages are not sent to other users. This project showcases a bit of my frontend development skills.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/live_chat",
+          "deployUrl": "https://guilhermescr.github.io/live_chat/pages/chat",
+          "otherLinks": [
+            {
+              "linkUrl": "https://guilhermescr.github.io/live_chat/",
+              "linkPlaceholder": "Talking App - Home"
+            }
+          ]
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/modern-pokedex.webp",
+          "title": "Modern Pokédex",
+          "description": "Modern Pokédex is a visually appealing and responsive web project that I developed using HTML, CSS, and JavaScript. It integrates with the PokéAPI, offering a comprehensive Pokémon database. With a power button, engaging animation, and convenient search field, users can explore and find Pokémon effortlessly. Navigation buttons enable seamless browsing, while the display section presents crucial Pokémon stats. Modern Pokédex brings the world of Pokémon to life, offering a captivating and user-friendly experience for trainers and enthusiasts alike. The Pokédex Body was made with HTML and CSS.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/modern-pokedex",
+          "deployUrl": "https://guilhermescr.github.io/modern-pokedex/with-javascript/modern-pokedex"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/galoa-slaca13.webp",
+          "title": "Galoa Slaca13",
+          "description": "Galoa Slaca13 is a technical test project that I developed as part of a frontend internship application process in Brazil. This scientific website showcases my skills in HTML and CSS, which were the specified requirements for the test. The website features an engaging and informative platform for scientific content. It includes a video, a detailed description, a summary, and a discussion section where users could interact through comments if I were allowed to use JavaScript. The visually appealing design is characterized by an appealing orange color scheme, which adds a touch of vibrancy and enhances the overall aesthetics. For this project, I followed a Figma template (link in the GitHub repository) provided by the company, demonstrating my ability to translate design concepts into a fully functional website using HTML and CSS.",
+          "techStack": ["HTML", "CSS"],
+          "repositoryUrl": "https://github.com/guilhermescr/galoa-13slaca",
+          "deployUrl": "https://guilhermescr.github.io/galoa-13slaca/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/flex-tourisms.webp",
+          "title": "Flex Tourisms",
+          "description": "Flex Tourisms is an immersive landing page project crafted using HTML and CSS, showcasing an elegant and captivating design. The page features various sections, starting with an engaging Who We Are segment that provides insights into the company's mission and values. The following sections highlight the wide range of services offered by Flex Tourisms, giving visitors a glimpse into the exceptional experiences they can expect. The Our Plans section presents enticing packages and options, enticing users to explore and choose their ideal travel plans. Throughout the design, flexbox is extensively utilized to ensure optimal responsiveness and seamless alignment of elements. The overall aesthetic embraces a pleasing blue color scheme, complementing the immersive travel theme. With its carefully curated content and visually appealing layout, Flex Tourisms creates an inviting and informative landing page experience.",
+          "techStack": ["HTML", "CSS"],
+          "repositoryUrl": "https://github.com/guilhermescr/flexbox-landing-page-dio",
+          "deployUrl": "https://flex-tourisms.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/devguiga-linktree.webp",
+          "title": "DevGuiga Linktree",
+          "description": "DevGuiga Linktree is a sleek and stylish project designed to enhance my online presence. Built using HTML, CSS, and JavaScript, it provides a personalized and dynamic platform similar to Linktree. This project is specifically created to showcase my various social media links and highlight my YouTube channel, conveniently accessible from a single location. With an aesthetically pleasing design, DevGuiga Linktree ensures that my Instagram bio is visually appealing and professionally presented. By leveraging the power of HTML, CSS, and JavaScript, this project offers a seamless and user-friendly experience, allowing my followers to easily navigate and connect with my online presence.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/devguiga",
+          "deployUrl": "https://devguiga.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/faq-collapse.webp",
+          "title": "FAQ Collapse",
+          "description": "FAQ Collapse is a project developed using HTML, CSS, and JavaScript that offers an intuitive and interactive way to present frequently asked questions. With its sleek design and user-friendly interface, the website displays a list of questions in a collapsible format. When users click on the arrow icon next to a question, the corresponding answer smoothly expands or collapses, providing a seamless and efficient browsing experience. By leveraging HTML, CSS, and JavaScript, FAQ Collapse offers a dynamic and engaging solution for organizing and accessing frequently asked questions, ensuring that users can easily find the information they need.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/50days50projects/tree/main/projects/faq-collapse",
+          "deployUrl": "https://guilhermescr.github.io/50days50projects/projects/faq-collapse/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/cars-garage.webp",
+          "title": "Cars Garage",
+          "description": "Cars Garage is a user-friendly website that enables users to add cars to their virtual garage. With a simple and intuitive interface, users can input details such as the car's brand, license plate, and owner. By utilizing the Date() method, the website automatically records and displays the timestamp when each car joins the garage. All car entries are conveniently stored in the browser's Local Storage, ensuring that the information persists even after closing or refreshing the page. Cars Garage provides a seamless and efficient solution for car management, allowing users to keep track of their vehicles in a digital format.",
+          "techStack": ["HTML", "CSS", "JavaScript", "Local Storage"],
+          "repositoryUrl": "https://github.com/guilhermescr/cars-garage",
+          "deployUrl": "https://guilhermescr.github.io/cars-garage/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/news-page.webp",
+          "title": "News Page",
+          "description": "News Page is a website that I developed to practice and showcase my HTML and CSS skills, with a focus on utilizing display grid and flexbox. The website features a visually appealing card-based layout where news articles are presented. Each card provides a summary and key details of the article, offering users a glimpse into the content. While the website focuses on displaying news in a concise format rather than showing complete articles, the emphasis remains on creating an engaging and polished user interface. By implementing grid and flexbox, I aimed to ensure optimal responsiveness and an enjoyable browsing experience. News Page reflects my dedication to honing my HTML and CSS abilities while delivering an attractive and functional website for news consumption.",
+          "techStack": ["HTML", "CSS"],
+          "repositoryUrl": "https://github.com/guilhermescr/site-responsivo",
+          "deployUrl": "https://guilhermescr.github.io/site-responsivo/"
+        }
+      ],
+      "projectsTitle": "Projects",
+      "seeProjects": {
+        "seeAll": "See All",
+        "seeLess": "See Less"
+      },
+      "seeMoreInfo": "See More"
+    },
+    "footer": {
+      "createdBy": "Designed & Built By: Guilherme Rocha"
+    }
   },
   "ptBR": {
     "header": {
-      "navItems": ["Início", "Sobre Mim", "Projetos", "Contato"]
+      "navItems": ["inicio", "habilidades", "sobre", "projetos", "contato"]
     },
-    "introduction": {},
-    "skills": {},
-    "aboutMe": {},
-    "projects": [
-      {
-        "imgSrc": "../../../../assets/img/projects/green-food.png",
-        "title": "Green Food",
-        "description": "Green Food is a landing page for a fictional vegan restaurant. It shows meal categories, a carousel with Food & Appetizers, a menu with some of our products, an about me section, as well as a footer which has some links and payment methods. This landing page has an appealing design, combined with a nice color palette and it's fully responsive.",
-        "techStack": ["HTML", "TailwindCSS", "JavaScript"],
-        "repositoryUrl": "https://github.com/guilhermescr/greenfood",
-        "deployUrl": "https://guilhermescr.github.io/greenfood/src/pt-br/"
-      },
-      {
-        "imgSrc": "",
-        "title": "",
-        "description": "",
-        "techStack": [""],
-        "repositoryUrl": "",
-        "deployUrl": ""
+    "introduction": {
+      "h1": {
+        "span1": "Olá",
+        "span2": "Eu sou",
+        "span3": "Desenvolvedor Front-end"
       }
-    ],
-    "contact": {}
+    },
+    "skills": {
+      "h2": "Habilidades"
+    },
+    "aboutMe": {
+      "h2": "Sobre Mim",
+      "location": "Salvador, Bahia, Brasil",
+      "description": "Desenvolvedor Front-end, com experiência em HTML, CSS/SCSS, TypeScript/JavaScript, Angular, um pouco de React e outras tecnologias. Eu me esforço para criar interfaces fluídas através da escrita de código limpo e otimizado, utilizando ferramentas e técnicas de desenvolvimento modernas. Desejo trabalhar como Desenvolvedor Front-end em projetos desafiadores e inovadores, buscando criar interfaces intuitivas e visualmente atraentes. Estou ansioso para colaborar com equipes criativas, contribuindo para a construção de experiências digitais excepcionais e impactantes.",
+      "downloadCV": "Baixar CV"
+    },
+    "portfolio": {
+      "takeALook": "Dê uma olhada no que já fiz",
+      "projects": [
+        {
+          "imgSrc": "../../../../assets/img/projects/green-food.webp",
+          "title": "Green Food",
+          "description": "Green Food é uma página de embarque para um restaurante vegano fictício. Ela exibe categorias de refeições, um carrossel com Comidas e Aperitivos, um menu com alguns dos nossos produtos, uma seção Sobre Nós e um rodapé com links e métodos de pagamento. Esta landing page possui um design atraente, combinado com uma paleta de cores agradável e é totalmente responsiva.",
+          "techStack": ["HTML", "TailwindCSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/greenfood",
+          "deployUrl": "https://guilhermescr.github.io/greenfood/src/pt-br/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/pokeboard.webp",
+          "title": "PokéBoard",
+          "description": "O PokéBoard é uma dashboard construída com Angular que oferece uma interface amigável para explorar dados de Pokémon da PokéAPI. O projeto inclui um recurso de Autenticação que garante que apenas usuários logados possam acessar rotas específicas, fornecendo segurança aprimorada e impedindo acesso não autorizado. O painel incorpora o Angular Material e SCSS para melhorar o design da interface do usuário e proporcionar uma experiência visualmente atraente. Para mais informações, consulte o arquivo README no repositório do GitHub.",
+          "techStack": [
+            "Angular",
+            "Angular Material",
+            "TypeScript",
+            "RxJS",
+            "SCSS",
+            "UUID",
+            "ngx-pagination",
+            "ngx-toastr"
+          ],
+          "repositoryUrl": "https://github.com/guilhermescr/pokeboard",
+          "deployUrl": "https://pokeboard.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/nexus-store.webp",
+          "title": "Nexus Store",
+          "description": "A Nexus Store é um e-commerce feito em ReactJS, otimizado para dispositivos móveis, que oferece uma experiência de compra perfeita. Os usuários podem explorar uma ampla variedade de produtos, adicionar novos itens, editar ou excluir os existentes e visualizar informações detalhadas do produto por meio de roteamento dinâmico. Com a ajuda dos Módulos CSS, o projeto garante um design visualmente atraente. Vale ressaltar que a Nexus Store utiliza o Local Storage para salvar as informações dos produtos, permitindo que os usuários acessem seus produtos escolhidos sem interrupções, mesmo após atualizar ou reabrir o site. Além disso, a funcionalidade do carrinho permite que os usuários adicionem produtos de forma conveniente para compra futura, gerenciem as quantidades... Este projeto apresenta um carrossel que exibe os produtos e ofertas mais populares. Com sua interface intuitiva e uso eficiente do Local Storage, a Nexus Store oferece uma plataforma amigável para navegar e comprar produtos. No entanto, este projeto ainda não possui uma funcionalidade de checkout.",
+          "techStack": ["ReactJS", "SwiperJS", "CSS Modules", "Local Storage"],
+          "repositoryUrl": "https://github.com/guilhermescr/nexus-store",
+          "deployUrl": "https://nexustore.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/manage-tasks.webp",
+          "title": "Manage Tasks",
+          "description": "O Manage Tasks é um poderoso site de lista de tarefas construído com Angular, TypeScript, SCSS e Firebase. Essa lista de tarefas oferece uma solução abrangente de gerenciamento de tarefas para que os usuários possam se manter organizados e produtivos. Com uma interface de usuário intuitiva alimentada pelo Angular, os usuários podem criar, atualizar e excluir tarefas facilmente. O uso do TypeScript garante um código robusto e escalável. O estilo SCSS melhora o apelo visual do site, proporcionando uma experiência de usuário perfeita. Aproveitando as capacidades do Firebase, o Manage Tasks armazena as tarefas com segurança na nuvem, permitindo que os usuários acessem e gerenciem suas listas de tarefas de qualquer dispositivo com conexão à internet. Seja para rastreamento de tarefas pessoais ou gerenciamento de projetos colaborativos, o Manage Tasks oferece uma solução confiável e eficiente para organizar e priorizar tarefas.",
+          "techStack": ["Angular", "TypeScript", "SCSS", "Firebase"],
+          "repositoryUrl": "https://github.com/guilhermescr/angular-todo-list",
+          "deployUrl": "https://managetasks.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/json-generator.webp",
+          "title": "JSON Generator",
+          "description": "O JSON Generator é um projeto freelance impressionante que assumi para ajudar um amigo a superar desafios durante seu estágio. Este gerador, desenvolvido usando HTML, CSS e JavaScript, oferece uma solução valiosa para gerar objetos JSON de forma rápida e eficiente. Projetado com uma interface amigável CRUD, o JSON Generator simplifica o processo de escrita de JSONs, permitindo que os usuários insiram facilmente pares de propriedade-valor e criem estruturas aninhadas com facilidade. Ao aproveitar essa ferramenta poderosa, os usuários podem economizar tempo significativo e se concentrar em outras tarefas críticas, aumentando a produtividade em seus projetos. O JSON Generator é um testemunho da minha capacidade de fornecer soluções práticas e impactantes, mostrando minha expertise em desenvolvimento web e resolução de problemas.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/json-generator",
+          "deployUrl": "https://generatejson.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/memory-game.webp",
+          "title": "Memory Game",
+          "description": "O Memory Game é um jogo de navegador envolvente que oferece uma experiência de jogo encantadora. Com design responsivo e seleção de idioma, os usuários podem desfrutar do jogo em português ou inglês. O menu oferece opções para jogar, configurar as configurações, acessar o terminal e ver os créditos. Escolha entre uma variedade de temas emocionantes, incluindo animes populares e séries de TV. O jogo oferece múltiplos níveis de dificuldade e um sistema de vidas para uma experiência desafiadora. Divirta-se com os modos clássico ou aleatório e personalize a aparência do jogo usando modelos. Com efeitos sonoros, animações e conquistas, o Memory Game garante uma jogabilidade cativante. Gerencie seu perfil, acompanhe o progresso e jogue com diferentes níveis. O terminal permite interações adicionais, enquanto o menu de kebab fornece opções convenientes. Descubra a alegria de combinar cartas e alcance pontuações altas neste viciante jogo da memória.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/memory-game",
+          "deployUrl": "https://mmgame.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/ng-postgram.webp",
+          "title": "NGPostGram",
+          "description": "O NGPostGram se destaca pela integração perfeita de uma API GraphQL, permitindo a recuperação e o gerenciamento eficiente de dados de postagens. Este projeto dinâmico permite que os usuários consumam dados da API GraphQL para realizar operações essenciais, como criar e excluir postagens. Com um sistema de autenticação seguro e um guarda de autenticação, o NGPostGram garante que os usuários possam acessar e interagir com as funcionalidades da plataforma com segurança. Os usuários podem navegar e explorar uma seleção curada de postagens, criar novo conteúdo e remover postagens existentes conforme necessário. O NGPostGram aproveita o poder do GraphQL para oferecer uma experiência simplificada e amigável para o gerenciamento e o envolvimento com postagens.",
+          "techStack": [
+            "Angular",
+            "TypeScript",
+            "SCSS",
+            "Ant Design",
+            "GraphQL"
+          ],
+          "repositoryUrl": "https://github.com/guilhermescr/angular-challenge",
+          "deployUrl": "https://ngpostgram.vercel.app/login"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/simple-blog.webp",
+          "title": "Simple Blog",
+          "description": "O Simple Blog é um projeto desenvolvido pessoalmente, apresentando um layout de duas colunas. A primeira seção permite que os usuários realizem operações CRUD em comentários, incluindo adição, atualização e exclusão. Os comentários também podem ser recuperados por seu ID, que é exibido no console do navegador. Na segunda seção, os comentários são exibidos e armazenados em uma API que criei com a ajuda de tutoriais online. A API do projeto é construída usando Node.js e utiliza o JSON Server para o gerenciamento de dados perfeito. Essa integração garante uma persistência e recuperação eficientes de dados, aprimorando a funcional",
+          "techStack": ["HTML", "CSS", "JavaScript", "NodeJS"],
+          "repositoryUrl": "https://github.com/guilhermescr/simple-blog",
+          "apiRepositoryUrl": "https://github.com/guilhermescr/simple-blog-api",
+          "apiDeployUrl": "https://simple-blog-api-v3aa.onrender.com/blog",
+          "deployUrl": "https://blogsimple.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/live-chat.webp",
+          "title": "Talking App",
+          "description": "Talking App é um impressionante projeto colaborativo de chat ao vivo que desenvolvi com um amigo. Ele combina uma landing page visualmente atraente com um menu de navegação responsivo. O recurso principal é a funcionalidade de chat, semelhante às mensagens diretas do Instagram. Os usuários podem digitar mensagens na área de texto, que aparecem na interface de chat. No entanto, observe que essa é apenas uma experiência visual, pois as mensagens não são enviadas para outros usuários. Este projeto demonstra um pouco das minhas habilidades de desenvolvimento frontend.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/live_chat",
+          "deployUrl": "https://guilhermescr.github.io/live_chat/pages/chat",
+          "otherLinks": [
+            {
+              "linkUrl": "https://guilhermescr.github.io/live_chat/",
+              "linkPlaceholder": "Talking App - Home"
+            }
+          ]
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/modern-pokedex.webp",
+          "title": "Modern Pokédex",
+          "description": "Modern Pokédex é um projeto web visualmente atraente e responsivo que desenvolvi usando HTML, CSS e JavaScript. Ele se integra à PokéAPI, oferecendo um banco de dados abrangente de Pokémon. Com um botão de energia, animação envolvente e campo de pesquisa conveniente, os usuários podem explorar e encontrar Pokémon facilmente. Botões de navegação permitem uma navegação perfeita, enquanto a seção de exibição apresenta estatísticas cruciais dos Pokémon. A Modern Pokédex dá vida ao mundo dos Pokémon, oferecendo uma experiência envolvente e amigável para treinadores e entusiastas. O corpo do Pokédex foi feito com HTML e CSS.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/modern-pokedex",
+          "deployUrl": "https://guilhermescr.github.io/modern-pokedex/with-javascript/modern-pokedex"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/galoa-slaca13.webp",
+          "title": "Galoa Slaca13",
+          "description": "Galoa Slaca13 é um projeto de teste técnico que desenvolvi como parte de um processo seletivo para um estágio de frontend no Brasil. Este site científico demonstra minhas habilidades em HTML e CSS, que eram os requisitos especificados para o teste. O site apresenta uma plataforma envolvente e informativa para conteúdo científico. Ele inclui um vídeo, uma descrição detalhada, um resumo e uma seção de discussão onde os usuários podem interagir por meio de comentários, se eu fosse permitido usar JavaScript. O design visualmente atraente é caracterizado por uma agradável paleta de cores laranja, que adiciona um toque de vivacidade e aprimora a estética geral. Para este projeto, segui um modelo do Figma (link no repositório do GitHub) fornecido pela empresa, demonstrando minha capacidade de traduzir conceitos de design em um site totalmente funcional usando HTML e CSS.",
+          "techStack": ["HTML", "CSS"],
+          "repositoryUrl": "https://github.com/guilhermescr/galoa-13slaca",
+          "deployUrl": "https://guilhermescr.github.io/galoa-13slaca/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/flex-tourisms.webp",
+          "title": "Flex Tourisms",
+          "description": "Flex Tourisms é um projeto envolvente de página de embarque criado usando HTML e CSS, que apresenta um design elegante e cativante. A página possui várias seções, começando com um envolvente segmento Sobre Nós que fornece insights sobre a missão e os valores da empresa. As seções seguintes destacam a ampla variedade de serviços oferecidos pela Flex Tourisms, dando aos visitantes uma visão das experiências excepcionais que podem esperar. A seção Nossos Planos apresenta pacotes e opções tentadores, incentivando os usuários a explorar e escolher seus planos de viagem ideais. Ao longo do design, o flexbox é amplamente utilizado para garantir uma responsividade ideal e alinhamento perfeito dos elementos. A estética geral adota uma agradável paleta de cores azuis, complementando o tema imersivo de viagens. Com seu conteúdo cuidadosamente elaborado e layout visualmente atraente, o Flex Tourisms cria uma experiência de landing page convidativa e informativa.",
+          "techStack": ["HTML", "CSS"],
+          "repositoryUrl": "https://github.com/guilhermescr/flexbox-landing-page-dio",
+          "deployUrl": "https://flex-tourisms.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/devguiga-linktree.webp",
+          "title": "DevGuiga Linktree",
+          "description": "DevGuiga Linktree é um projeto elegante e estiloso projetado para aprimorar minha presença online. Construído usando HTML, CSS e JavaScript, ele fornece uma plataforma personalizada e dinâmica semelhante ao Linktree. Este projeto foi especificamente criado para exibir meus diversos links de mídias sociais e destacar meu canal do YouTube, acessível de forma conveniente a partir de um único local. Com um design esteticamente agradável, o DevGuiga Linktree garante que minha bio do Instagram seja visualmente atraente e apresentada profissionalmente. Ao aproveitar o poder do HTML, CSS e JavaScript, este projeto oferece uma experiência perfeita e amigável, permitindo que meus seguidores naveguem e se conectem facilmente com minha presença online.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/devguiga",
+          "deployUrl": "https://devguiga.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/faq-collapse.webp",
+          "title": "FAQ Collapse",
+          "description": "FAQ Collapse é um projeto desenvolvido usando HTML, CSS e JavaScript que oferece uma maneira intuitiva e interativa de apresentar perguntas frequentes. Com seu design elegante e interface amigável, o site exibe uma lista de perguntas em um formato expansível. Quando os usuários clicam no ícone de seta ao lado de uma pergunta, a resposta correspondente se expande ou recolhe suavemente, proporcionando uma experiência de navegação perfeita e eficiente. Ao aproveitar o HTML, CSS e JavaScript, o FAQ Collapse oferece uma solução dinâmica e envolvente para organizar e acessar perguntas frequentes, garantindo que os usuários possam encontrar facilmente as informações de que precisam.",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "repositoryUrl": "https://github.com/guilhermescr/50days50projects/tree/main/projects/faq-collapse",
+          "deployUrl": "https://guilhermescr.github.io/50days50projects/projects/faq-collapse/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/cars-garage.webp",
+          "title": "Cars Garage",
+          "description": "Cars Garage é um site de fácil utilização que permite aos usuários adicionar carros à sua garagem virtual. Com uma interface simples e intuitiva, os usuários podem inserir detalhes como marca do carro, placa e proprietário. Utilizando o método Date(), o site registra automaticamente e exibe o horário em que cada carro entra na garagem. Todas as entradas de carros são convenientemente armazenadas no Local Storage do navegador, garantindo que as informações persistam mesmo após fechar ou atualizar a página. Cars Garage oferece uma solução fácil e eficiente para o gerenciamento de carros, permitindo que os usuários acompanhem seus veículos em formato digital.",
+          "techStack": ["HTML", "CSS", "JavaScript", "Local Storage"],
+          "repositoryUrl": "https://github.com/guilhermescr/cars-garage",
+          "deployUrl": "https://guilhermescr.github.io/cars-garage/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/news-page.webp",
+          "title": "News Page",
+          "description": "News Page é um site que desenvolvi para praticar e exibir minhas habilidades de HTML e CSS, com foco no uso de display grid e flexbox. O site apresenta um layout baseado em cartões visualmente atraente, onde os artigos de notícias são apresentados. Cada cartão fornece um resumo e detalhes-chave do artigo, oferecendo aos usuários uma visão do conteúdo. Embora o site se concentre em exibir notícias de forma concisa, em vez de mostrar artigos completos, o objetivo principal é criar uma interface do usuário atraente e polida. Ao implementar grid e flexbox, busquei garantir uma resposta ideal e uma experiência de navegação agradável. O News Page reflete minha dedicação em aprimorar minhas habilidades de HTML e CSS, ao mesmo tempo em que oferece um site atraente e funcional para consumo de notícias.",
+          "techStack": ["HTML", "CSS"],
+          "repositoryUrl": "https://github.com/guilhermescr/site-responsivo",
+          "deployUrl": "https://guilhermescr.github.io/site-responsivo/"
+        }
+      ],
+      "projectsTitle": "Projetos",
+      "seeProjects": {
+        "seeAll": "Ver Todos Os",
+        "seeLess": "Ver Menos"
+      },
+      "seeMoreInfo": "Saiba Mais"
+    },
+    "footer": {
+      "createdBy": "Projetado & Desenvolvido Por: Guilherme Rocha"
+    }
   }
 }

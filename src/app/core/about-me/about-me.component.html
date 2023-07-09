@@ -5,7 +5,7 @@
   />
 
   <article class="about-me__info">
-    <h2>About Me</h2>
+    <h2>{{ aboutMe.h2 }}</h2>
 
     <div class="location">
       <mat-icon
@@ -15,17 +15,11 @@
         fontIcon="location_on"
       ></mat-icon>
 
-      <p>Salvador, Bahia, Brazil</p>
+      <p>{{ aboutMe.location }}</p>
     </div>
 
     <p>
-      Front-end & Web Developer, experienced with <strong>HTML</strong>,
-      <strong>SCSS</strong>, <strong>TypeScript/JavaScript</strong>,
-      <strong>Angular</strong>, a bit of <strong>React</strong>, and some other
-      technologies. I strive to build engaging interfaces through writing clean
-      and optimized code and utilizing cutting-edge development tools and
-      techniques. I'd like to work with outstanding web applications and
-      collaborating with cross-functional teams.
+      {{ aboutMe.description }}
     </p>
 
     <div class="more-contact-options">
@@ -40,7 +34,7 @@
             aria-label="File Download Icon"
             fontIcon="file_download"
           ></mat-icon>
-          Download CV
+          {{ aboutMe.downloadCV }}
         </a>
       </button>
 

@@ -1,6 +1,6 @@
 <section class="projects">
   <h2>Portfolio</h2>
-  <p>Take a look at what I've done so far 👀</p>
+  <p>{{ projectsTexts.takeALook }} 👀</p>
 
   <section
     class="projects-cards"
@@ -24,13 +24,20 @@
   </ng-template>
 
   <p class="current-amount-of-projects">
-    Projects ({{ areAllProjectsActive ? projects.length : fewProjects.length }})
+    {{ projectsTexts.title }} ({{
+      areAllProjectsActive ? projects.length : fewProjects.length
+    }})
   </p>
 
   <button
     class="see-projects-button"
     (click)="areAllProjectsActive ? showFewProjects() : showAllProjects()"
   >
-    {{ areAllProjectsActive ? "See Less Projects" : "See All Projects" }}
+    {{
+      areAllProjectsActive
+        ? projectsTexts.seeProjects.seeLess
+        : projectsTexts.seeProjects.seeAll
+    }}
+    {{ projectsTexts.title }}
   </button>
 </section>

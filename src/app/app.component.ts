@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import portfolio from 'src/portfolio.json';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +15,10 @@ export class AppComponent {
     'z-index': '2',
   };
   isHeaderWrapperSticky: boolean = false;
+  isChooseLanguageMenuOpen: boolean = true;
+
   tabsScrollTop: number[] = [];
-  tabs = ['home', 'skills', 'about-me', 'projects', 'contact'];
+  tabs = portfolio.enUS.header.navItems;
   currentTab: string = 'home';
 
   @HostListener('window:scroll') onWindowScroll() {
@@ -70,5 +73,9 @@ export class AppComponent {
 
   updateCurrentTab(updatedTab: string): void {
     this.currentTab = updatedTab;
+  }
+
+  closeChooseLanguageMenu(): void {
+    this.isChooseLanguageMenuOpen = false;
   }
 }
