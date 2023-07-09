@@ -17,7 +17,8 @@
       "h2": "About Me",
       "location": "Salvador, Bahia, Brazil",
       "description": "Front-end & Web Developer, experienced with HTML, SCSS, TypeScript/JavaScript, Angular, a bit of React, and some other technologies. I strive to build engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I'd like to work with outstanding web applications and to collaborate with cross-functional teams.",
-      "downloadCV": "Download CV"
+      "downloadCV": "Download CV",
+      "cvFile": "../../../assets/files/cv-en-guilhermerocha.pdf"
     },
     "portfolio": {
       "takeALook": "Take a look at what I've done so far",
@@ -203,7 +204,8 @@
       "h2": "Sobre Mim",
       "location": "Salvador, Bahia, Brasil",
       "description": "Desenvolvedor Front-end, com experiência em HTML, CSS/SCSS, TypeScript/JavaScript, Angular, um pouco de React e outras tecnologias. Eu me esforço para criar interfaces fluídas através da escrita de código limpo e otimizado, utilizando ferramentas e técnicas de desenvolvimento modernas. Desejo trabalhar como Desenvolvedor Front-end em projetos desafiadores e inovadores, buscando criar interfaces intuitivas e visualmente atraentes. Estou ansioso para colaborar com equipes criativas, contribuindo para a construção de experiências digitais excepcionais e impactantes.",
-      "downloadCV": "Baixar CV"
+      "downloadCV": "Baixar CV",
+      "cvFile": "../../../assets/files/cv-ptbr-guilhermerocha.pdf"
     },
     "portfolio": {
       "takeALook": "Dê uma olhada no que já fiz",
