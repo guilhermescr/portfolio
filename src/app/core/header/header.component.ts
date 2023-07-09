@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Output, Renderer2 } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  Renderer2,
+} from '@angular/core';
 import { ThemesService } from 'src/app/shared/services/themes.service';
 
 @Component({
@@ -7,9 +13,11 @@ import { ThemesService } from 'src/app/shared/services/themes.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @Output() scrollToTheSectionEvent = new EventEmitter<string>();
+  @Output() scrollToSectionEvent = new EventEmitter<string>();
+  @Output() updateCurrentTabEvent = new EventEmitter<string>();
+  @Input() currentTab: string = '';
+
   currentMode: string = this.themesService.getCurrentModeValue();
-  currentTab: string = 'home';
   isNavbarOpen: boolean = false;
 
   constructor(
@@ -34,7 +42,10 @@ export class HeaderComponent {
     this.isNavbarOpen = false;
   }
 
-  scrollToTheSection(): void {
-    this.scrollToTheSectionEvent.emit(this.currentTab);
+  scrollToSection(currentSection: string): void {
+    this.updateCurrentTabEvent.emit(currentSection);
+    this.scrollToSectionEvent.emit(currentSection);
+
+    this.closeNavbarMenu();
   }
 }

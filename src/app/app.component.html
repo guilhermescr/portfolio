@@ -1,5 +1,10 @@
-<app-wrapper>
-  <app-header (scrollToTheSectionEvent)="scrollToTheSection($event)"></app-header>
+<app-wrapper [ngStyle]="isHeaderWrapperSticky ? headerWrapperSticky : null">
+  <app-header
+    id="home"
+    (scrollToSectionEvent)="scrollToSection($event)"
+    (updateCurrentTabEvent)="updateCurrentTab($event)"
+    [currentTab]="currentTab"
+  ></app-header>
 </app-wrapper>
 
 <app-wrapper>
@@ -7,17 +12,17 @@
 </app-wrapper>
 
 <app-wrapper>
-  <app-skills></app-skills>
+  <app-skills id="skills"></app-skills>
 </app-wrapper>
 
-<app-wrapper #aboutMe>
-  <app-about-me></app-about-me>
+<app-wrapper>
+  <app-about-me id="about-me"></app-about-me>
 </app-wrapper>
 
-<app-wrapper #projects>
-  <app-projects></app-projects>
+<app-wrapper>
+  <app-projects id="projects"></app-projects>
 </app-wrapper>
 
-<app-footer #contact></app-footer>
+<app-footer id="contact"></app-footer>
 
 <app-go-to-the-top></app-go-to-the-top>

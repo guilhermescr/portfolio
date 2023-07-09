@@ -21,6 +21,7 @@
         "description": "The PokéBoard is a web application built with Angular that provides a user-friendly interface for exploring Pokémon data from the PokéAPI. The application includes an Auth Guard feature that ensures only logged-in users can access specific routes, providing enhanced security and preventing unauthorized access. The dashboard incorporates Angular Material and SCSS to enhance the UI design and provide a visually appealing experience. For more info, check the README in the GitHub repository.",
         "techStack": [
           "Angular",
+          "Angular Material",
           "TypeScript",
           "RxJS",
           "SCSS",
@@ -35,7 +36,7 @@
         "imgSrc": "../../../../assets/img/projects/nexus-store.webp",
         "title": "Nexus Store",
         "description": "Nexus Store is a mobile-first ReactJS-based web application that offers a seamless shopping experience. Users can explore a wide range of products, add new items, edit or delete existing ones, and view detailed product information through dynamic routing. With the help of CSS Modules, the application ensures a visually appealing design. Notably, Nexus Store leverages Local Storage to save product information, enabling users to seamlessly access their chosen products even after refreshing or reopening the application. Additionally, the cart functionality allows users to conveniently add products for future purchase, manage quantities... This project features a carousel showcasing the hottest products and offers. With its intuitive interface and efficient use of Local Storage, Nexus Store delivers a user-friendly platform for browsing and purchasing products. However, this project does not have a checkout feature yet.",
-        "techStack": ["ReactJS", "CSS Modules", "Local Storage"],
+        "techStack": ["ReactJS", "SwiperJS", "CSS Modules", "Local Storage"],
         "repositoryUrl": "https://github.com/guilhermescr/nexus-store",
         "deployUrl": "https://nexustore.vercel.app/"
       },

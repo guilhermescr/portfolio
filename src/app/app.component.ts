@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,29 +6,69 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  @ViewChild('aboutMe') aboutMe!: ElementRef;
-  @ViewChild('projects') projects!: ElementRef;
-  @ViewChild('contact') contact!: ElementRef;
-  element: any;
+  headerWrapperSticky = {
+    'background-color': '#000',
+    'max-width': '100vw',
+    position: 'sticky',
+    top: '0',
+    'z-index': '2',
+  };
+  isHeaderWrapperSticky: boolean = false;
+  tabsScrollTop: number[] = [];
+  tabs = ['home', 'skills', 'about-me', 'projects', 'contact'];
+  currentTab: string = 'home';
 
-  ngOnInit(): void {
-    console.log();
+  @HostListener('window:scroll') onWindowScroll() {
+    this.isHeaderWrapperSticky = window.scrollY > 0;
+
+    const latestTabs: string[] = [];
+
+    this.tabsScrollTop.forEach((tabScrollTop, index) => {
+      if (window.scrollY >= tabScrollTop) {
+        latestTabs.push(this.tabs[index]);
+      }
+    });
+
+    const latestTab = latestTabs[latestTabs.length - 1];
+
+    this.updateCurrentTab(latestTab);
   }
 
-  scrollToTheSection(currentSection: string): void {
-    switch (currentSection) {
-      case 'about-me':
-        console.log(this.aboutMe);
-        // this.aboutMe.nativeElement.scrollIntoView();
-        break;
-      case 'projects':
-        // this.aboutMe.nativeElement.scrollIntoView();
-        break;
-      case 'contact':
-        // this.aboutMe.nativeElement.scrollIntoView();
-        break;
-      default:
-        console.log('home');
+  @HostListener('window:resize') onWindowResize() {
+    this.fillTabsScrollTopArray();
+  }
+
+  constructor(private elementRef: ElementRef) {}
+
+  ngAfterViewInit(): void {
+    this.fillTabsScrollTopArray();
+  }
+
+  scrollToSection(currentSection: string): void {
+    const sectionToBeFocused: HTMLElement =
+      this.elementRef.nativeElement.querySelector(`#${currentSection}`);
+
+    if (sectionToBeFocused) {
+      window.scrollTo(0, sectionToBeFocused.offsetTop);
     }
+  }
+
+  fillTabsScrollTopArray(): void {
+    this.tabsScrollTop = [];
+
+    this.tabs.forEach((tab, index) => {
+      const tabElement: HTMLElement =
+        this.elementRef.nativeElement.querySelector(`#${tab}`);
+
+      if (index + 1 === this.tabs.length) {
+        this.tabsScrollTop.push(tabElement.offsetTop - 400);
+      } else {
+        this.tabsScrollTop.push(tabElement.offsetTop);
+      }
+    });
+  }
+
+  updateCurrentTab(updatedTab: string): void {
+    this.currentTab = updatedTab;
   }
 }

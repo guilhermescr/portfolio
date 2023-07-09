@@ -10,6 +10,7 @@
     position: relative;
 
     .logo {
+      cursor: pointer;
       max-width: 10rem;
     }
 
@@ -143,7 +144,7 @@
           animation: openNavbarAnimation 0.1s linear;
           background-color: base.$darker-green;
           @include mixins.flex-center(column);
-          justify-content: flex-start;
+          gap: 2rem;
           left: 0;
           min-height: 100vh;
           position: fixed;
@@ -177,7 +178,6 @@
 
         ul {
           flex-direction: column;
-          margin-top: 2rem;
 
           li {
             font-size: 1.8rem;

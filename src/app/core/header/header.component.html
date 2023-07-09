@@ -7,6 +7,7 @@
         : '../../../assets/img/light-logo-devguiga.webp'
     }}"
     alt="Dev Guiga's Logo"
+    (click)="scrollToSection('home')"
   />
 
   <nav [class.open]="isNavbarOpen">
@@ -33,32 +34,31 @@
     <ul>
       <li
         [class.active]="currentTab === 'home'"
-        (click)="currentTab = 'home'"
-        (click)="closeNavbarMenu()"
+        (click)="scrollToSection('home')"
       >
         Home
       </li>
       <li
+        [class.active]="currentTab === 'skills'"
+        (click)="scrollToSection('skills')"
+      >
+        Skills
+      </li>
+      <li
         [class.active]="currentTab === 'about-me'"
-        (click)="currentTab = 'about-me'"
-        (click)="closeNavbarMenu()"
-        (click)="scrollToTheSection()"
+        (click)="scrollToSection('about-me')"
       >
         About Me
       </li>
       <li
         [class.active]="currentTab === 'projects'"
-        (click)="currentTab = 'projects'"
-        (click)="closeNavbarMenu()"
-        (click)="scrollToTheSection()"
+        (click)="scrollToSection('projects')"
       >
         Projects
       </li>
       <li
         [class.active]="currentTab === 'contact'"
-        (click)="currentTab = 'contact'"
-        (click)="closeNavbarMenu()"
-        (click)="scrollToTheSection()"
+        (click)="scrollToSection('contact')"
       >
         Contact
       </li>
