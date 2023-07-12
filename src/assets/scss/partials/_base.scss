@@ -10,10 +10,12 @@ $headingGradient-secondary-color: #1b8038;
 
 $light_background: #fdfdfd;
 $light_lighter-text: #333;
+$light_project-background: #fafffa;
 
 $dark_background: #1a1917;
 $dark_light-green: #20fc8f;
 $dark_lighter-text: #ddd;
+$dark_project-background: #262924;
 
 @mixin lightMode {
   --bgColor: #{$light_background};
@@ -22,6 +24,7 @@ $dark_lighter-text: #ddd;
   --greenText: #{$headingGradient-secondary-color};
   --highlightWithGradient: #{$headingGradient-primary-color,
     $headingGradient-secondary-color};
+  --projectBackgroundColor: #{$light_project-background};
 }
 
 @mixin darkMode {
@@ -31,4 +34,5 @@ $dark_lighter-text: #ddd;
   --greenText: #{$headingGradient-primary-color};
   --highlightWithGradient: #{$headingGradient-primary-color 20%,
     $dark_light-green};
+  --projectBackgroundColor: #{$dark_project-background};
 }

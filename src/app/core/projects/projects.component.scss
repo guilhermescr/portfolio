@@ -21,7 +21,7 @@
 
     .projects-cards {
       @include mixins.flex-center(column);
-      gap: 2.5rem;
+      gap: 5.5rem;
     }
 
     .current-amount-of-projects {
@@ -59,6 +59,10 @@
       h2,
       p {
         text-align: center;
+      }
+
+      .projects-cards {
+        gap: 2.5rem;
       }
     }
   }
