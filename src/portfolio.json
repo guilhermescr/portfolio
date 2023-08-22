@@ -24,6 +24,22 @@
       "takeALook": "Take a look at what I've done so far",
       "projects": [
         {
+          "imgSrc": "../../../../assets/img/projects/coffee-delivery.webp",
+          "title": "Coffee Delivery",
+          "description": "During the challenge, I was tasked with applying advanced concepts to create a coffee ordering application from scratch, resulting in a sophisticated platform with three distinct screens. The first screen, dedicated to coffee presentation and listing, incorporates responsive design concepts to engage users as they explore the various coffee options. On the second screen, users can input their delivery information. The third screen, the final step of the journey, provides a detailed order confirmation with organized details.",
+          "techStack": ["React 18", "Vite", "TailwindCSS", "Zustand"],
+          "repositoryUrl": "https://github.com/guilhermescr/coffee-delivery",
+          "deployUrl": "https://cafe-delivery.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/nexcent.webp",
+          "title": "Nexcent",
+          "description": "Nexcent is an attractive landing page, implemented with Angular 15, RxJS and SCSS. It is fully responsive, and it was developed based on a Figma Design Template.",
+          "techStack": ["Angular", "SCSS", "RxJS"],
+          "repositoryUrl": "https://github.com/guilhermescr/nexcent",
+          "deployUrl": "https://nexcents.vercel.app/"
+        },
+        {
           "imgSrc": "../../../../assets/img/projects/green-food.webp",
           "title": "Green Food",
           "description": "Green Food is a landing page for a fictional vegan restaurant. It shows meal categories, a carousel with Food & Appetizers, a menu with some of our products, an about me section, as well as a footer which has some links and payment methods. This landing page has an appealing design, combined with a nice color palette and it's fully responsive.",
@@ -165,14 +181,6 @@
           "techStack": ["HTML", "CSS", "JavaScript", "Local Storage"],
           "repositoryUrl": "https://github.com/guilhermescr/cars-garage",
           "deployUrl": "https://guilhermescr.github.io/cars-garage/"
-        },
-        {
-          "imgSrc": "../../../../assets/img/projects/news-page.webp",
-          "title": "News Page",
-          "description": "News Page is a website that I developed to practice and showcase my HTML and CSS skills, with a focus on utilizing display grid and flexbox. The website features a visually appealing card-based layout where news articles are presented. Each card provides a summary and key details of the article, offering users a glimpse into the content. While the website focuses on displaying news in a concise format rather than showing complete articles, the emphasis remains on creating an engaging and polished user interface. By implementing grid and flexbox, I aimed to ensure optimal responsiveness and an enjoyable browsing experience. News Page reflects my dedication to honing my HTML and CSS abilities while delivering an attractive and functional website for news consumption.",
-          "techStack": ["HTML", "CSS"],
-          "repositoryUrl": "https://github.com/guilhermescr/site-responsivo",
-          "deployUrl": "https://guilhermescr.github.io/site-responsivo/"
         }
       ],
       "projectsTitle": "Projects",
@@ -210,6 +218,22 @@
     "portfolio": {
       "takeALook": "Dê uma olhada no que já fiz",
       "projects": [
+        {
+          "imgSrc": "../../../../assets/img/projects/coffee-delivery.webp",
+          "title": "Coffee Delivery",
+          "description": "Durante o desafio, fui desafiado a aplicar conceitos avançados para criar uma aplicação de encomenda de cafés a partir do zero, resultando em uma plataforma sofisticada com três telas distintas. A primeira tela, de apresentação e listagem de cafés, incorpora conceitos de design responsivo para cativar os usuários enquanto exploram as diversas opções de café. Na segunda tela, os usuários podem preencher seus dados de entrega. A terceira tela, a etapa final da jornada, oferece uma confirmação detalhada do pedido, com detalhes organizados.",
+          "techStack": ["React 18", "Vite", "TailwindCSS", "Zustand"],
+          "repositoryUrl": "https://github.com/guilhermescr/coffee-delivery",
+          "deployUrl": "https://cafe-delivery.vercel.app/"
+        },
+        {
+          "imgSrc": "../../../../assets/img/projects/nexcent.webp",
+          "title": "Nexcent",
+          "description": "Nexcent é uma landing page atrativa, implementada com Angular 15, SCSS e RxJS. Este site é totalmente responsivo, e foi desenvolvido baseado em um design no Figma.",
+          "techStack": ["Angular", "SCSS", "RxJS"],
+          "repositoryUrl": "https://github.com/guilhermescr/nexcent",
+          "deployUrl": "https://nexcents.vercel.app/"
+        },
         {
           "imgSrc": "../../../../assets/img/projects/green-food.webp",
           "title": "Green Food",
@@ -352,14 +376,6 @@
           "techStack": ["HTML", "CSS", "JavaScript", "Local Storage"],
           "repositoryUrl": "https://github.com/guilhermescr/cars-garage",
           "deployUrl": "https://guilhermescr.github.io/cars-garage/"
-        },
-        {
-          "imgSrc": "../../../../assets/img/projects/news-page.webp",
-          "title": "News Page",
-          "description": "News Page é um site que desenvolvi para praticar e exibir minhas habilidades de HTML e CSS, com foco no uso de display grid e flexbox. O site apresenta um layout baseado em cartões visualmente atraente, onde os artigos de notícias são apresentados. Cada cartão fornece um resumo e detalhes-chave do artigo, oferecendo aos usuários uma visão do conteúdo. Embora o site se concentre em exibir notícias de forma concisa, em vez de mostrar artigos completos, o objetivo principal é criar uma interface do usuário atraente e polida. Ao implementar grid e flexbox, busquei garantir uma resposta ideal e uma experiência de navegação agradável. O News Page reflete minha dedicação em aprimorar minhas habilidades de HTML e CSS, ao mesmo tempo em que oferece um site atraente e funcional para consumo de notícias.",
-          "techStack": ["HTML", "CSS"],
-          "repositoryUrl": "https://github.com/guilhermescr/site-responsivo",
-          "deployUrl": "https://guilhermescr.github.io/site-responsivo/"
         }
       ],
       "projectsTitle": "Projetos",

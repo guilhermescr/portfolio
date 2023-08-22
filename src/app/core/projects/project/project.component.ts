@@ -26,11 +26,21 @@ export class ProjectComponent {
   }
 
   getShortProjectDescription(): void {
-    const shortProjectDescription = this.project.description
+    let shortProjectDescription = this.project.description
       .split(' ')
       .slice(0, 28)
       .join(' ')
       .concat('...');
+
+    // to avoid 4 or more dots
+    if (
+      shortProjectDescription.charAt(shortProjectDescription.length - 1) === '.'
+    ) {
+      shortProjectDescription = shortProjectDescription.slice(
+        0,
+        shortProjectDescription.length - 1
+      );
+    }
 
     this.projectShortDescription = shortProjectDescription;
   }
